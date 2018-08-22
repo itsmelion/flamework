@@ -12,17 +12,17 @@ ___
 
 ```html
 <!-- Defining a container -->
-<element contain class="contain">...</element>
+<div contain class="contain">...</div>
 
 <!-- Direction -->
-<element layout=column column nowrap>...</element>
-<element class="row nowrap mobile-wrap">...</element>
-<element mobile-layout=row mobile=column>...</element>
+<div layout=column column nowrap>...</div>
+<div class="row nowrap mobile-wrap">...</div>
+<div mobile-layout=row mobile=column>...</div>
 
 
 <!-- Alignment -->
-<element align="center stretch">...</element>
-<element mobile-align="center center">...</element>
+<div align="center stretch">...</div>
+<div mobile-align="center center">...</div>
 
 <!--
 Align Options:
@@ -42,8 +42,8 @@ Align Options:
 
 
 <!-- Flex Columns -->
-<element flex="33">...</element>
-<element mobile-flex="grow">...</element>
+<div flex="33">...</div>
+<div mobile-flex="grow">...</div>
 
 <!--
 Flex Options:
