@@ -1,0 +1,58 @@
+#{$column} {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+#{$row} {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+[nowrap],
+.nowrap { flex-wrap: nowrap; }
+
+[wrap],
+.wrap { flex-wrap: wrap; }
+
+.layout-fill, [fill], [layout-fill] {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+// This is a mixin, which fixes IE11's vertical alignment issue, when using `min-height`.
+// See https://connect.microsoft.com/IE/feedback/details/816293/
+@mixin ie11-min-height-flexbug($min-height) {
+  &::before {
+    content: '';
+    min-height: $min-height;
+    visibility: hidden;
+    display: inline-block;
+  }
+}
+
+@media #{$mobile}{
+  #{$mobileColumn} {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    display: flex;
+  }
+
+  #{$mobileRow} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .mobile-wrap,
+  [mobile-wrap] { flex-wrap: wrap; }
+
+  [mobile-nowrap],
+  .mobile-nowrap { flex-wrap: nowrap; }
+}

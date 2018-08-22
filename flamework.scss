@@ -1,0 +1,21 @@
+/*!
+ * FlameWork
+ * @author Christhopher Lion <christhopherleao@icloud.com>
+ * https://github.com/alia-code/flamework
+ * @license GPL-3.0
+*/
+@import './src/vars';
+@import './src/reset';
+@import './src/utilities';
+@import './src/layout';
+@import './src/align';
+@import './src/flex';
+
+@import './src/base';
+@import './src/typography';
+
+@media print {
+  [hide-print]:not([show-print]):not([show]) {
+    display: none;
+  }
+}

@@ -1,0 +1,53 @@
+body {
+  font-family: $base-font;
+  line-height: $base-line-height;
+  font-weight: 300;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+h3, .h3, h4, h5, h6 {
+  font-family: $base-font;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-size: 4vw;
+  letter-spacing: -.025em;
+  font-weight: 100;
+  @media #{$mobile} {
+    font-size: 8vw;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-size: 2.8vw;
+  letter-spacing: -.025em;
+  font-weight: 300;
+  @media #{$mobile} {
+    font-size: 6vw;
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h4, h5, h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}

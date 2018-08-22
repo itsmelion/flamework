@@ -1,0 +1,120 @@
+$container-width:     74rem !default;
+$mobile-breakpoint:   69rem !default; // ~780px
+$desktop-breakpoint:  $mobile-breakpoint + 0.01;
+$mobile:  "screen and (max-width: #{$mobile-breakpoint})" !default;
+$desktop: "screen and (min-width: #{$desktop-breakpoint})" !default;
+
+$radius: 6pt !default;
+
+$black: #112;
+$black8: rgba($black, .7) !default;
+$black5: rgba($black, .5) !default;
+$black3: rgba($black, .25) !default;
+$black1: rgba($black, .1) !default;
+
+$white: #fff;
+$white7: rgba($white, .75) !default;
+$white5: rgba($white, .5) !default;
+$white3: rgba($white, .3) !default;
+$white1: rgba($white, .1) !default;
+
+$background: #e0e0e0 !default;
+
+$column: '[column], [layout=column], .layout-column, .column';
+$row: '[row], [layout=row], .layout-row, .row';
+$mobileColumn: '[mobile-column], [mobile-layout=column], .mobile-layout-column, .mobile-column';
+$mobileRow: '[mobile-row], [mobile-layout=row], .mobile-layout-row, .mobile-row';
+
+$base-font: 'Assistant', 'Segoe UI', 'Open Sans',
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Roboto",
+  "Helvetica Neue", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-line-height: 1.4 !default;
+$base-font-size: 100% !default;
+
+//Color pallete of fire !!
+$color-1: #DAF7A6 !default;
+$color-2: #FFC300 !default;
+$color-3: #FF5733 !default;
+$color-4: #C70039 !default;
+$color-5: #900C3F !default;
+$color-6: #581845 !default;
+
+// Mixins
+
+@mixin shadow {
+  box-shadow: 0 1pt 3pt rgba(0, 0, 20, 0.15), 0 1pt 6pt rgba(0, 0, 20, .1);
+}
+
+@mixin transition($prop: all) {
+  transition: $prop .2s ease;
+}
+
+@mixin icon-small {
+  width: auto;
+  height: .8em;
+}
+
+@mixin input-placeholder-color($black3) {
+  $pseudos: '::-webkit-input-placeholder', ':-moz-placeholder', '::-moz-placeholder',
+    ':-ms-input-placeholder', '::-webkit-input-placeholder';
+
+  // It is important to export every pseudo within its own block, because otherwise the placeholder
+  // won't be set on the most browsers.
+  @each $pseudo in $pseudos {
+    &#{$pseudo} {
+      color: $black3;
+      text-shadow: none;
+    }
+  }
+}
+
+@mixin drag-cursor {
+  cursor: url('/images/drag.png') 16 9, ew-resize;
+}
+
+// mixin definition ; sets LTR and RTL within the same style call
+// @see https://css-tricks.com/almanac/properties/d/direction/
+
+@mixin rtl($prop, $ltr-value, $rtl-value) {
+  #{$prop}: $ltr-value;
+  [dir=rtl] & {
+    #{$prop}: $rtl-value;
+  }
+}
+
+@mixin rtl-prop($ltr-prop, $rtl-prop, $value, $reset-value) {
+  #{$ltr-prop}: $value;
+  [dir=rtl] & {
+    #{$ltr-prop}: $reset-value;
+    #{$rtl-prop}: $value;
+  }
+}
+
+// To reverse padding (top left bottom right) -> (top right bottom left)
+@function rtl-value($list) {
+  @if length($list) == 4 {
+    @return nth($list, 1) nth($list, 4) nth($list, 3) nth($list, 2)
+  }
+  @if length($list) == 5 {
+    @return nth($list, 1) nth($list, 4) nth($list, 3) nth($list, 2) nth($list, 5)
+  }
+  @return $list;
+}
+
+@mixin selection($color, $bg) {
+  &::selection {
+    color: $color;
+    background: $bg;
+    text-shadow: none;
+  }
+
+  &::-moz-selection {
+    color: $color;
+    background: $bg;
+    text-shadow: none;
+  }
+}

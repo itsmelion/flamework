@@ -1,0 +1,32 @@
+{
+  "name": "flamework",
+  "version": "3.0.0",
+  "description": "A flexbox framework. Ultra light, intuitive and clear syntax.",
+  "main": "flamework.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alia-code/flamework.git",
+    "https": "https://github.com/alia-code/flamework.git"
+  },
+  "keywords": [
+    "alia",
+    "flexbox",
+    "framework",
+    "css",
+    "grid",
+    "intuitech",
+    "bootstrap",
+    "gridlex",
+    "flexboxgrid",
+    "flamework",
+    "firework",
+    "flameworks",
+    "fireworks"
+  ],
+  "author": "Christhopher Lion <christhopherleao@icloud.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/alia-code/flamework/issues"
+  },
+  "homepage": "https://github.com/alia-code/flamework#readme"
+}

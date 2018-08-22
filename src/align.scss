@@ -1,0 +1,185 @@
+
+// Alignment attributes for layout containers' children
+// Arrange on the Main Axis
+// center, start, end, between, around
+// flex-start is the default for justify-content
+// ------------------------------
+
+[align],
+[align="start stretch"] {
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+}
+// Main Axis Center
+[align="start"],
+[align="start start"],
+[align="start center"],
+[align="start end"],
+[align="start stretch"] {
+  justify-content: flex-start;
+}
+
+// Main Axis Center
+[align="center"],
+[align="center start"],
+[align="center center"],
+[align="center end"],
+[align="center stretch"] {
+  justify-content: center;
+}
+
+// Main Axis End
+[align="end"], //stretch
+[align="end center"],
+[align="end start"],
+[align="end end"],
+[align="end stretch"] {
+  justify-content: flex-end;
+}
+
+// Main Axis Space Around
+[align="around"], //stretch
+[align="around center"],
+[align="around start"],
+[align="around end"],
+[align="around stretch"] {
+    justify-content: space-around;
+}
+
+// Main Axis Space Between
+[align="between"], //stretch
+[align="between center"],
+[align="between start"],
+[align="between end"],
+[align="between stretch"] {
+  justify-content: space-between;
+}
+
+
+// Arrange on the Cross Axis
+// center, start, end
+// stretch is the default for align-items
+// ------------------------------
+
+[align="start start"],
+[align="center start"],
+[align="end start"],
+[align="between start"],
+[align="around start"] {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+[align="start center"],
+[align="center center"],
+[align="end center"],
+[align="between center"],
+[align="around center"] {
+  align-items: center;
+  align-content: center;
+  max-width: 100%;
+}
+
+[align="start end"],
+[align="center end"],
+[align="end end"],
+[align="between end"],
+[align="around end"] {
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+[align="start stretch"],
+[align="center stretch"],
+[align="end stretch"],
+[align="between stretch"],
+[align="around stretch"] {
+  align-items: stretch;
+  align-content: stretch;
+}
+
+@media #{$mobile} {
+  [mobile-align="start stretch"] {
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+  }
+
+  [mobile-align="start"],
+  [mobile-align="start start"],
+  [mobile-align="start center"],
+  [mobile-align="start end"],
+  [mobile-align="start stretch"] {
+    justify-content: flex-start;
+  }
+
+  [mobile-align="center"],
+  [mobile-align="center start"],
+  [mobile-align="center center"],
+  [mobile-align="center end"],
+  [mobile-align="center stretch"] {
+    justify-content: center;
+  }
+
+  [mobile-align="end"],
+  [mobile-align="end center"],
+  [mobile-align="end start"],
+  [mobile-align="end end"],
+  [mobile-align="end stretch"] {
+    justify-content: flex-end;
+  }
+
+  [mobile-align="around"],
+  [mobile-align="around center"],
+  [mobile-align="around start"],
+  [mobile-align="around end"],
+  [mobile-align="around stretch"] {
+    justify-content: space-around;
+  }
+
+  [mobile-align="between"],
+  [mobile-align="between center"],
+  [mobile-align="between start"],
+  [mobile-align="between end"],
+  [mobile-align="between stretch"] {
+    justify-content: space-between;
+  }
+
+  [mobile-align="start start"],
+  [mobile-align="center start"],
+  [mobile-align="end start"],
+  [mobile-align="between start"],
+  [mobile-align="around start"] {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  [mobile-align="start center"],
+  [mobile-align="center center"],
+  [mobile-align="end center"],
+  [mobile-align="between center"],
+  [mobile-align="around center"] {
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+  }
+
+  [mobile-align="start end"],
+  [mobile-align="center end"],
+  [mobile-align="end end"],
+  [mobile-align="between end"],
+  [mobile-align="around end"] {
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  [mobile-align="start stretch"],
+  [mobile-align="center stretch"],
+  [mobile-align="end stretch"],
+  [mobile-align="between stretch"],
+  [mobile-align="around stretch"] {
+    align-items: stretch;
+    align-content: stretch;
+  }
+}

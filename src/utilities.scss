@@ -1,0 +1,93 @@
+.p10 { padding: 0 10%; }
+.ph10 { padding: 4vh 10%; }
+.p1 { padding: 1rem; }
+.ph1 { padding: 0 1rem; }
+.pv1 { padding: 1rem 0; }
+.ph2 { padding: 0 2rem; }
+.pv2 { padding: 2rem 0; }
+
+.m1 { margin: 1em; }
+.m2 { margin: 2em; }
+.mv1 { margin-top: 1em; margin-bottom: 1em; }
+.mv2 { margin-top: 2em; margin-bottom: 2em; }
+.mh1 { margin-left: 1em; margin-right: 1em; }
+.mh2 { margin-left: 2em; margin-right: 2em; }
+.mt2 { margin-top: 2em; }
+.mt1 { margin-top: 1em; }
+.mb2 { margin-bottom: 2em; }
+.mh10 { margin-top: 10%; margin-bottom: 10%; }
+.mb10 { margin-bottom: 10%; }
+
+.draggable {
+  cursor: url('/images/drag.png') 16 9, ew-resize;
+}
+
+.cover-fit {
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-center, .center { text-align: center; }
+.text-right, .right { text-align: right; }
+
+.videoWrapper {
+  position: relative;
+  /* 16:9 */
+  padding-bottom: 56.25%;
+  height: 100%;
+  overflow: hidden;
+  iframe,
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// ############################## DISPLAY UTILS
+@mixin hide {
+  display: none;
+  backface-visibility: hidden;
+  visibility: hidden;
+}
+
+@mixin show {
+  display: flex;
+  backface-visibility: visible;
+  visibility: visible;
+}
+
+.show-lg, .show-desktop
+.show-sm, .show-mobile {
+  @include hide;
+}
+
+[row="nowrap"] {
+  flex-wrap: nowrap;
+}
+
+@media #{$mobile} {
+  .show-sm, .show-mobile {
+    @include show;
+  }
+  .hide-sm, .hide-mobile {
+    @include hide;
+  }
+  [row] {
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+  }
+}
+
+@media #{$desktop} {
+  .show-lg, .show-desktop {
+    @include show;
+  }
+  .hide-lg, .hide-desktop {
+    @include hide;
+  }
+}
+
+//END ################### DISPLAY UTILS
