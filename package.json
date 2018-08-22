@@ -1,8 +1,8 @@
 {
   "name": "flamework",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A flexbox framework. Ultra light, intuitive and clear syntax.",
-  "main": "flamework.scss",
+  "main": "index.scss",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/alia-code/flamework.git",
