@@ -24,9 +24,8 @@ body {
   border: 1pt solid transparent;
   padding: .5em .8em;
   border-radius: .15em;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   &:hover, &:focus { @include shadow; }
-  &:only-of-type { margin-left: 0; }
 }
 
 header {
@@ -41,6 +40,7 @@ header {
   margin: auto;
   max-width: 97rem;
   padding: 0 4%;
+  width: 100%;
 }
 
 a[href] {
@@ -64,13 +64,13 @@ img {
  * ---
  * Print version
  * (from https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css)
- */
+*/
 
 @media print {
   *,
   *:before,
   *:after {
-    background: transparent !important;
+    background: transparent !important; // stylelint-disable-line
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
