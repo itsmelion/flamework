@@ -13,9 +13,11 @@
 }
 
 [nowrap],
+[row="nowrap"], [column="nowrap"]
 .nowrap { flex-wrap: nowrap; }
 
 [wrap],
+[row="wrap"], [column="wrap"]
 .wrap { flex-wrap: wrap; }
 
 .layout-fill, [fill], [layout-fill] {
@@ -37,7 +39,7 @@
   }
 }
 
-@media #{$mobile}{
+@media #{$mobile} {
   #{$mobileColumn} {
     flex-direction: column;
     flex-wrap: nowrap;

@@ -64,10 +64,6 @@
   @include hide;
 }
 
-[row="nowrap"] {
-  flex-wrap: nowrap;
-}
-
 @media #{$mobile} {
   .show-sm, .show-mobile {
     @include show;
