@@ -46,6 +46,20 @@
 }
 
 @media #{$mobile} {
+  #{$mobileColumn} {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    display: flex;
+    flex: 0 0 auto;
+  }
+
+  #{$mobileRow} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    flex: 0 0 auto;
+  }
+
   [mobile-nowrap],
   [mobile-row="nowrap"],
   [mobile-column="nowrap"],

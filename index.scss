@@ -15,7 +15,9 @@
 @import './src/typography';
 
 @media print {
-  [hide-print]:not([show-print]):not([show]) {
+  [hide-print]:not([show-print]):not([show]),
+  .hide-print
+  {
     display: none;
   }
 }

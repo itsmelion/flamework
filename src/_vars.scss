@@ -6,13 +6,13 @@ $desktop: "screen and (min-width: #{$desktop-breakpoint})" !default;
 
 $radius: 6pt !default;
 
-$black: #112;
+$black: #112 !default;
 $black8: rgba($black, .7) !default;
 $black5: rgba($black, .5) !default;
 $black3: rgba($black, .25) !default;
 $black1: rgba($black, .1) !default;
 
-$white: #fff;
+$white: #fff !default;
 $white7: rgba($white, .75) !default;
 $white5: rgba($white, .5) !default;
 $white3: rgba($white, .3) !default;
@@ -20,10 +20,10 @@ $white1: rgba($white, .1) !default;
 
 $background: #e0e0e0 !default;
 
-$column: '[column], [layout=column], .layout-column, .column';
-$row: '[row], [layout=row], .layout-row, .row';
-$mobileColumn: '[mobile-column], [mobile-layout=column], .mobile-layout-column, .mobile-column';
-$mobileRow: '[mobile-row], [mobile-layout=row], .mobile-layout-row, .mobile-row';
+$column: '[column], [layout=column], .layout-column, .column' !default;
+$row: '[row], [layout=row], .layout-row, .row' !default;
+$mobileColumn: '[mobile-column], [mobile-layout=column], .mobile-layout-column, .mobile-column' !default;
+$mobileRow: '[mobile-row], [mobile-layout=row], .mobile-layout-row, .mobile-row' !default;
 
 $base-font: 'Assistant', 'Segoe UI', 'Open Sans',
   -apple-system,

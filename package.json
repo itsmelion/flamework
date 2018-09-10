@@ -1,6 +1,6 @@
 {
   "name": "flamework",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "A flexbox framework. Ultra light, intuitive and clear syntax.",
   "main": "index.scss",
   "repository": {
