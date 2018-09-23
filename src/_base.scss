@@ -43,21 +43,25 @@ header {
   width: 100%;
 }
 
-a[href] {
+a[href], :link, :any-link {
   text-decoration: none;
   cursor: pointer;
+  color: currentColor;
   transition: color .2s;
   &:hover {
     text-decoration: none;
   }
 }
 
-img {
+img, picture {
   max-width: 100%;
   max-height: 100%;
   height: auto;
   user-select: none;
+  image-rendering: crisp-edges;
 }
+
+svg { shape-rendering: crispEdges;  }
 
 /**
  * partials/print

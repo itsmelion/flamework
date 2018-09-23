@@ -1,7 +1,10 @@
+/* scss.lint-disable-rule duplicateProperties */
+
 body {
   font-family: $base-font;
   line-height: $base-line-height;
   font-weight: 300;
+  text-rendering: optimizeLegibility;
 }
 
 em,
@@ -47,7 +50,9 @@ h3 {
   font-weight: 400;
 }
 
-h4, h5, h6 {
+h4, h5 {
   font-size: 1.2em;
   font-weight: 700;
 }
+
+h6 { font-size: 1em; font-weight: 700; }

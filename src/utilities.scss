@@ -64,13 +64,13 @@
 
 // ############################## DISPLAY UTILS
 @mixin hide {
-  display: none;
+  display: none !important;
   backface-visibility: hidden;
   visibility: hidden;
 }
 
 @mixin show {
-  display: flex;
+  display: flex !important;
   backface-visibility: visible;
   visibility: visible;
 }
@@ -86,10 +86,6 @@
   }
   .hide-sm, .hide-mobile {
     @include hide;
-  }
-  [row] {
-    flex-wrap: wrap;
-    flex: 1 1 100%;
   }
 }
 
