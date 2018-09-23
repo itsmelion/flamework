@@ -58,10 +58,10 @@ img, picture {
   max-height: 100%;
   height: auto;
   user-select: none;
-  image-rendering: crisp-edges;
+  image-rendering: auto;
 }
 
-svg { shape-rendering: crispEdges;  }
+svg { shape-rendering: geometricPrecision;  }
 
 /**
  * partials/print
