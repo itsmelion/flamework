@@ -75,6 +75,8 @@ ___
 @include input-placeholder-color($black3) // custom inputs placeholders color
 @include selection($color, $bg) // custom text selection color
 @include drag-cursor;
+@include reset-button; // Remove relevant button styles
+@include absolute; // set position: absolute; and zeroes all axis
 ```
 ---
 ## Vars
