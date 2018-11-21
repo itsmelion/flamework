@@ -22,7 +22,7 @@ body {
   white-space: nowrap;
   vertical-align: middle;
   border: 1pt solid transparent;
-  padding: .5em .8em;
+  padding: .4em .8em;
   border-radius: .15em;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   &:hover, &:focus { @include shadow; }

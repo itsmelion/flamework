@@ -5,6 +5,8 @@ body {
   line-height: $base-line-height;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 em,
@@ -55,4 +57,12 @@ h4, h5 {
   font-weight: 700;
 }
 
-h6 { font-size: 1em; font-weight: 700; }
+h6 {
+  font-size: 1em;
+  font-weight: 700;
+  sub {
+    display: block;
+    font-size: .65em;
+    opacity: .5;
+  }
+}
