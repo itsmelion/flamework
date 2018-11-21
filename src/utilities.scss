@@ -1,37 +1,40 @@
-.p10 { padding: 0 10%; }
-.ph10 { padding: 4vh 10%; }
-.p1 { padding: 1rem; }
-.ph1 { padding: 0 1rem; }
-.pv1 { padding: 1rem 0; }
-.ph2 { padding: 0 2rem; }
-.pv2 { padding: 2rem 0; }
+.p10 { padding: 0 10%; } // @deprecated
+.ph10 { padding: 4vh 10%; } // @deprecated
+.mb10 { margin-bottom: 10%; } // @deprecated
+.mh10 { margin-top: 10%; margin-bottom: 10%; } // @deprecated
 
+// Padding
+.p1 { padding: 1rem; }
+.ph1 { padding-left: 1rem; padding-right: 1rem; }
+.pv1 { padding-top: 1rem; padding-bottom: 1rem; }
+
+.p2 { padding: 2rem; }
+.ph2 { padding-left: 2rem; padding-right: 2rem; }
+.pv2 { padding-top: 2rem; padding-bottom: 2rem; }
+
+
+// Margin
 .m1 { margin: 1em; }
-.m2 { margin: 2em; }
-.mr1 { margin-right: 1em; }
-.ml1 { margin-left: 1em; }
-.mr2 { margin-right: 2em; }
-.ml2 { margin-left: 2em; }
 .mv1 { margin-top: 1em; margin-bottom: 1em; }
-.mv2 { margin-top: 2em; margin-bottom: 2em; }
 .mh1 { margin-left: 1em; margin-right: 1em; }
+.mt1 { margin-top: 1em; }
+.mr1 { margin-right: 1em; }
+.mb1 { margin-bottom: 1em; }
+.ml1 { margin-left: 1em; }
+
+.m2 { margin: 2em; }
+.mv2 { margin-top: 2em; margin-bottom: 2em; }
 .mh2 { margin-left: 2em; margin-right: 2em; }
 .mt2 { margin-top: 2em; }
-.mt1 { margin-top: 1em; }
+.mr2 { margin-right: 2em; }
 .mb2 { margin-bottom: 2em; }
-.mh10 { margin-top: 10%; margin-bottom: 10%; }
-.mb10 { margin-bottom: 10%; }
+.ml2 { margin-left: 2em; }
 
-// .draggable {
-//   cursor: url('/images/drag.png') 16 9, ew-resize;
-// }
-
-.inline { display: inline; }
-.block { display: block; }
-.inline-block { display: inline-block; }
-
+// Text Align
 .right, .text-right { text-align: right; }
 .center, .text-center { text-align: center; }
+.left, .text-left { text-align: left; }
+
 
 .cover-fit {
   object-fit: cover;
@@ -42,9 +45,6 @@
   object-fit: contain;
   object-position: center;
 }
-
-.text-center, .center { text-align: center; }
-.text-right, .right { text-align: right; }
 
 .videoWrapper {
   position: relative;
@@ -62,7 +62,13 @@
   }
 }
 
-// ############################## DISPLAY UTILS
+// DISPLAY UTILS
+
+// Display mode
+.inline { display: inline; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+
 @mixin hide {
   display: none !important;
   backface-visibility: hidden;
@@ -98,4 +104,4 @@
   }
 }
 
-//END ################### DISPLAY UTILS
+//END DISPLAY UTILS
