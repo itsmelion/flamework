@@ -4,16 +4,39 @@
 .mh10 { margin-top: 10%; margin-bottom: 10%; } // @deprecated
 
 // Padding
-.p1 { padding: 1rem; }
-.ph1 { padding-left: 1rem; padding-right: 1rem; }
-.pv1 { padding-top: 1rem; padding-bottom: 1rem; }
+.p05 { padding: .5em; }
+.ph05 { padding-left: .5em; padding-right: .5em; }
+.pv05 { padding-top: .5em; padding-bottom: .5em; }
+.pt05 { padding-top: .5em; }
+.pr05 { padding-right: .5em; }
+.pb05 { padding-bottom: .5em; }
+.pl05 { padding-left: .5em; }
 
-.p2 { padding: 2rem; }
-.ph2 { padding-left: 2rem; padding-right: 2rem; }
-.pv2 { padding-top: 2rem; padding-bottom: 2rem; }
+.p1 { padding: 1em; }
+.ph1 { padding-left: 1em; padding-right: 1em; }
+.pv1 { padding-top: 1em; padding-bottom: 1em; }
+.pt1 { padding-top: 1em; }
+.pr1 { padding-right: 1em; }
+.pb1 { padding-bottom: 1em; }
+.pl1 { padding-left: 1em; }
 
+.p2 { padding: 2em; }
+.ph2 { padding-left: 2em; padding-right: 2em; }
+.pv2 { padding-top: 2em; padding-bottom: 2em; }
+.pt2 { padding-top: 2em; }
+.pr2 { padding-right: 2em; }
+.pb2 { padding-bottom: 2em; }
+.pl2 { padding-left: 2em; }
 
 // Margin
+.m05 { margin: .5em; }
+.mv05 { margin-top: .5em; margin-bottom: .5em; }
+.mh05 { margin-left: .5em; margin-right: .5em; }
+.mt05 { margin-top: .5em; }
+.mr05 { margin-right: .5em; }
+.mb05 { margin-bottom: .5em; }
+.ml05 { margin-left: .5em; }
+
 .m1 { margin: 1em; }
 .mv1 { margin-top: 1em; margin-bottom: 1em; }
 .mh1 { margin-left: 1em; margin-right: 1em; }
