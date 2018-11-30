@@ -1,6 +1,6 @@
 $container-width:     74rem !default;
 $mobile-breakpoint:   69rem !default; // ~780px
-$desktop-breakpoint:  $mobile-breakpoint + 0.01;
+$desktop-breakpoint:  $mobile-breakpoint + 0.01 !default;
 $mobile:  "screen and (max-width: #{$mobile-breakpoint})" !default;
 $desktop: "screen and (min-width: #{$desktop-breakpoint})" !default;
 
