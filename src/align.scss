@@ -56,6 +56,14 @@
   justify-content: space-between;
 }
 
+// Main Axis Space Between
+[align="even"], //stretch
+[align="even center"],
+[align="even start"],
+[align="even end"],
+[align="even stretch"] {
+  justify-content: space-evenly;
+}
 
 // Arrange on the Cross Axis
 // center, start, end
