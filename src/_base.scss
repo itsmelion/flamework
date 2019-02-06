@@ -24,7 +24,7 @@
   padding: .4em .8em;
   border-radius: .15em;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  &:hover, &:focus { @include shadow; }
+  &:hover { @include shadow; }
 }
 
 header {
@@ -38,14 +38,14 @@ header {
 [contain], .contain, .container {
   margin-right: auto;
   margin-left: auto;
-  max-width: 96rem;
+  max-width: $container-width;
   width: 100%;
 }
 
-a[href], :link, :any-link {
+a[href], .link, :link, :any-link {
   text-decoration: none;
-  cursor: pointer;
   transition: color .2s;
+  cursor: pointer;
 
   &:hover {
     text-decoration: none;

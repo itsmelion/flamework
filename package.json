@@ -1,13 +1,10 @@
 {
   "name": "flamework",
-  "version": "3.1.1",
-  "description": "A flexbox framework. Ultra light, intuitive and clear syntax.",
+  "version": "3.1.2",
+  "description": "A flexbox SCSS lib. Light, non-intrusive with intuitive and clear syntax",
+  "homepage": "https://github.com/itsmelion/flamework#readme",
+  "author": "Christhopher Lion <christhopherleao@icloud.com>",
   "main": "index.scss",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/alia-code/flamework.git",
-    "https": "https://github.com/alia-code/flamework.git"
-  },
   "keywords": [
     "alia",
     "flexbox",
@@ -22,10 +19,13 @@
     "flameworks",
     "fireworks"
   ],
-  "author": "Christhopher Lion <christhopherleao@icloud.com>",
   "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/alia-code/flamework/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/itsmelion/flamework.git",
+    "https": "https://github.com/itsmelion/flamework.git"
   },
-  "homepage": "https://github.com/alia-code/flamework#readme"
+  "bugs": {
+    "url": "https://github.com/itsmelion/flamework/issues"
+  }
 }
