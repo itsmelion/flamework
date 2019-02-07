@@ -1,5 +1,5 @@
 /*!
- * FlameWork
+ * FlameWork 🔥
  * @author Christhopher Lion <christhopherleao@icloud.com>
  * https://github.com/itsmelion/flamework
  * @license GPL-3.0
@@ -16,9 +16,6 @@
 @import './src/typography';
 
 @media print {
-  [hide-print]:not([show-print]):not([show]),
-  .hide-print
-  {
-    display: none;
-  }
+  [hide-print]:not([show-print]):not([show]), .hide-print
+  { display: none; }
 }

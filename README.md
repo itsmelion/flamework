@@ -1,64 +1,68 @@
-🔥 Flamework
+Flamework 🔥
 --
-_Set you project ablaze!_
+A *flexbox SCSS* lib. Light, non-intrusive with intuitive and clear syntax to _put your project ablaze!_
 
-- [🔥 Flamework](#%F0%9F%94%A5-flamework)
-- [LAYOUT](#layout)
+- [Flamework 🔥](#flamework-%F0%9F%94%A5)
+- [Layout](#layout)
 - [Utils](#utils)
 - [Mixins](#mixins)
 - [Vars](#vars)
 ___
-## LAYOUT
+## Layout
 
+- Defining a container:
 ```html
-<!-- Defining a container -->
 <div contain class="contain">...</div>
+```
+___
 
-<!-- Direction -->
+- Direction and Wrap:
+```html
 <div layout=column column nowrap>...</div>
 <div class="row nowrap mobile-wrap">...</div>
 <div mobile-layout=row mobile=column>...</div>
+```
+___
 
-
-<!-- Alignment -->
+- Alignment:
+```html
 <div align="center stretch">...</div>
 <div mobile-align="center center">...</div>
+```
+Options:
+Main axis:
+- start
+- between
+- around
+- even
+- center
+- end
 
-<!--
-Align Options:
-  Main Axis:
-  - start
-  - center
-  - end
-  - between
-  - around
+Cross axis:
+- start
+- center
+- end
+- stretch
+___
 
-  Cross Axis:
-  - start
-  - center
-  - end
-  - stretch
--->
+Flex Columns
 
-
-<!-- Flex Columns -->
+```html
 <div flex="33">...</div>
 <div mobile-flex="grow">...</div>
+```
 
-<!--
 Flex Options:
 - multiples of 5: 5, 10, .. 95, 100
 - 33 or 66
 
-  Behavior:
-  - none
-  - initial
-  - noshrink
-  - auto
-  - stretch
-  - grow
--->
-```
+Behavior:
+- none
+- initial
+- noshrink
+- auto
+- stretch
+- grow
 
 ___
 
@@ -66,7 +70,6 @@ ___
 - .videoWrapper (makes video responsive 16:9)
 - .hide-mobile, .hide-desktop, .show-mobile, .show-desktop (instruct display on breakpoints)
 
-___
 ## Mixins
 ```scss
 @include shadow;
@@ -78,10 +81,10 @@ ___
 @include reset-button; // Remove relevant button styles
 @include absolute; // set position: absolute; and zeroes all axis
 ```
----
+
 ## Vars
 ```scss
-$container-width:     74rem !default;
+$container-width:     76rem !default;
 $mobile-breakpoint:   69rem !default; // ~780px
 $desktop-breakpoint:  $mobile-breakpoint + 0.01;
 $mobile:  "screen and (max-width: #{$mobile-breakpoint})" !default;
