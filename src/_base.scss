@@ -10,7 +10,7 @@
   user-select: none;
   outline: none;
   line-height: 1.2;
-  letter-spacing: -.25pt;
+  letter-spacing: -.2pt;
   font-weight: 300;
   font-size: 1.1em;
   color: currentColor;
@@ -23,7 +23,8 @@
   border: 1pt solid transparent;
   padding: .4em .8em;
   border-radius: .15em;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: color .1s linear, background-color .15s ease, border-color .15s ease, box-shadow .15s ease-in-out;
+  .svg-inline--fa { margin-top: -.35em; }
   &:hover { @include shadow; }
 }
 
@@ -46,7 +47,7 @@ a[href], .link, :link, :any-link {
   text-decoration: none;
   transition: color .2s;
   cursor: pointer;
-
+  .svg-inline--fa { margin-top: -.35em; }
   &:hover {
     text-decoration: none;
   }
@@ -92,7 +93,7 @@ svg { shape-rendering: geometricPrecision;  }
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
-   */
+  */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
