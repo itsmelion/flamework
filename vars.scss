@@ -6,7 +6,7 @@ $desktop: "screen and (min-width: #{$desktop-breakpoint})" !default;
 
 $radius: 6pt !default;
 
-$black: #112 !default;
+$black: #101018 !default;
 $black8: rgba($black, .7) !default;
 $black5: rgba($black, .5) !default;
 $black3: rgba($black, .25) !default;
@@ -18,7 +18,7 @@ $white5: rgba($white, .5) !default;
 $white3: rgba($white, .3) !default;
 $white1: rgba($white, .1) !default;
 
-$background: #e0e0e0 !default;
+$background: #eeeeee !default;
 
 $column: '[column], [layout=column], .layout-column, .column' !default;
 $row: '[row], [layout=row], .layout-row, .row' !default;
@@ -35,11 +35,15 @@ $base-font: "Assistant", "Segoe UI", "Open Sans",
 $base-line-height: 1.4 !default;
 $base-font-size: 100% !default;
 
+$yellow: #FFC300 !default;
+$red: #da0642 !default;
+$green: #27e486 !default;
+
 //Color pallete of fire !!
 $color-1: #DAF7A6 !default;
-$color-2: #FFC300 !default;
+$color-2: $yellow !default;
 $color-3: #FF5733 !default;
-$color-4: #C70039 !default;
+$color-4: $red !default;
 $color-5: #900C3F !default;
 $color-6: #581845 !default;
 
