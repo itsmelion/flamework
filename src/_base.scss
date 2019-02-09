@@ -16,6 +16,7 @@
   color: currentColor;
   width: auto;
   background-color: transparent;
+  background-color: var(--theme, transparent);
   display: inherit;
   white-space: nowrap;
   vertical-align: middle;
