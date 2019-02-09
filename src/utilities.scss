@@ -74,6 +74,10 @@
 .center, .text-center { text-align: center; }
 .left, .text-left { text-align: left; }
 
+.cap, .capitalize { text-transform: capitalize }
+.lower, .lowercase { text-transform: lowercase }
+.upper, .uppercase { text-transform: uppercase }
+
 .cover-fit {
   object-fit: cover;
   object-position: center;

@@ -13,15 +13,16 @@ body {
 .bold, strong, b { font-weight: bold; }
 .regular, .normal, address { font-weight: normal; }
 .thin, .light { font-weight: lighter; }
-.cap, .capitalize { text-transform: capitalize }
-.lower, .lowercase { text-transform: lowercase }
-.upper, .uppercase { text-transform: uppercase }
 
-h3, .h3, h4, h5, h6 {
-  font-family: $base-font;
+h3, h4, h5, h6 {
   line-height: 1.2;
   margin: 0;
   font-weight: bold;
+  > sub {
+    display: block;
+    font-size: .65em;
+    opacity: .5;
+  }
 }
 
 h1 {
@@ -45,22 +46,16 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-h4, h5 {
-  font-size: 1.2em;
-  font-weight: 700;
-}
+h4 { font-size: 1.35em; font-weight: 700; }
+
+h5 { font-size: 1.2em; }
 
 h6 {
   font-size: 1em;
-  font-weight: 700;
-  sub {
-    display: block;
-    font-size: .65em;
-    opacity: .5;
-  }
+  font-weight: 800;
 }
