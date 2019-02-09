@@ -7,13 +7,16 @@
 
 @import 'vars';
 @import './src/reset';
-@import './src/utilities';
 @import './src/layout';
 @import './src/align';
 @import './src/flex';
 
 @import './src/base';
 @import './src/typography';
+
+/**
+** Thinking about to turn it optional */
+@import 'utilities';
 
 @media print {
   [hide-print]:not([show-print]):not([show]), .hide-print

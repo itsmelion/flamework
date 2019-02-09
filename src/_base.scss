@@ -29,12 +29,12 @@
 
 button, p, i, a, h1, h2, h3, h4, h5, h6, b, sub, legend, sup {
   > .svg-inline--fa:not(:only-child) {
-    margin-top: -.3em;
-    margin-right: .5em;
+    margin-top: -.1em;
+    margin-right: .6em;
   }
 
   > .svg-inline--fa:last-child {
-    margin-left: .5em;
+    margin-left: .6em;
     margin-right: 0;
   }
 }
