@@ -13,6 +13,9 @@ body {
 .bold, strong, b { font-weight: bold; }
 .regular, .normal, address { font-weight: normal; }
 .thin, .light { font-weight: lighter; }
+.cap, .capitalize { text-transform: capitalize }
+.lower, .lowercase { text-transform: lowercase }
+.upper, .uppercase { text-transform: uppercase }
 
 h3, .h3, h4, h5, h6 {
   font-family: $base-font;
