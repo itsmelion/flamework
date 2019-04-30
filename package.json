@@ -1,10 +1,11 @@
 {
   "name": "flamework",
-  "version": "3.1.6",
+  "version": "4.0.0",
   "description": "A flexbox SCSS lib. Light, non-intrusive with intuitive and clear syntax",
   "homepage": "https://github.com/itsmelion/flamework#readme",
   "author": "Christhopher Lion <christhopherleao@icloud.com>",
-  "main": "index.scss",
+  "main": "./src/index.js",
+  "sass": "./index.scss",
   "keywords": [
     "alia",
     "flexbox",
@@ -27,5 +28,10 @@
   },
   "bugs": {
     "url": "https://github.com/itsmelion/flamework/issues"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
   }
 }
