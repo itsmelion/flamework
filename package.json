@@ -1,6 +1,6 @@
 {
   "name": "flamework",
-  "version": "4.0.0",
+  "version": "4.0.0-alpha1",
   "description": "A flexbox SCSS lib. Light, non-intrusive with intuitive and clear syntax",
   "homepage": "https://github.com/itsmelion/flamework#readme",
   "author": "Christhopher Lion <christhopherleao@icloud.com>",
