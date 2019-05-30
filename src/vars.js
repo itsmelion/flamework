@@ -42,7 +42,7 @@ export const yellow = '#FFC300';
 export const red = '#da0642';
 export const green = '#27e486';
 
-export const inputPlaceholderColor = (black3) => {
+export const inputPlaceholderColor = (color = black3) => {
   const pseudos = [
     '::-webkit-input-placeholder',
     ':-moz-placeholder',
@@ -55,15 +55,15 @@ export const inputPlaceholderColor = (black3) => {
   // won't be set on the most browsers.
   pseudos.forEach(pseudo => css`
     &${pseudo} {
-      color: ${black3};
+      color: ${color};
       text-shadow: none;
     }
-  `)
-}
+  `);
+};
 
 export const dragCursor = css`
   cursor: url('/images/drag.png') 16 9, ew-resize;
-`
+`;
 
 export const resetButton = css`
   appearance: none;
@@ -73,7 +73,7 @@ export const resetButton = css`
   border: none;
   border-radius: 0;
   background-color: transparent;
-`
+`;
 
 export const selection = (color, bg) => css`
   &::selection {
@@ -87,4 +87,4 @@ export const selection = (color, bg) => css`
     background: ${bg};
     text-shadow: none;
   }
-`
+`;
