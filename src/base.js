@@ -1,35 +1,21 @@
+import { css } from 'styled-components';
+import {
+  mobile, primary, baseFont, baseLineHeight,
+} from './vars';
+
+export default css`
 :root, html, body {
   position: relative;
   min-height: 100%;
   max-width: 100vw;
   height: 100%;
-  font-family: $base-font;
-  line-height: $base-line-height;
+  font-family: ${baseFont};
+  line-height: ${baseLineHeight};
   font-weight: 300;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.button {
-  user-select: none;
-  line-height: 1.2;
-  letter-spacing: -.2pt;
-  font-weight: 300;
-  font-size: 1.1em;
-  color: currentColor;
-  width: auto;
-  background-color: white;
-  background-color: var(--theme, white);
-  display: inherit;
-  white-space: nowrap;
-  vertical-align: middle;
-  border: 1pt solid transparent;
-  padding: .4em .8em;
-  border-radius: .15em;
-  transition: color .1s linear, background-color .15s ease, border-color .15s ease, box-shadow .15s ease-in-out;
-  cursor: pointer;
-  &:hover { @include shadow; }
+  --theme: ${primary};
 }
 
 button, p, i, a, h1, h2, h3, h4, h5, h6, b, sub, legend, sup {
@@ -46,16 +32,9 @@ button, p, i, a, h1, h2, h3, h4, h5, h6, b, sub, legend, sup {
 header {
   background-size: cover;
   background-position: center;
-  @media #{$mobile} {
+  @media ${mobile} {
     background-attachment: scroll;
   }
-}
-
-[contain], .contain {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: $container-width;
-  width: 100%;
 }
 
 a[href], .link, :link, :any-link {
@@ -101,7 +80,7 @@ svg { shape-rendering: geometricPrecision;  }
   }
   /*
    * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
+   * or use the "javascript:" pseudo protocol
   */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
@@ -125,3 +104,4 @@ svg { shape-rendering: geometricPrecision;  }
     page-break-after: avoid;
   }
 }
+`;

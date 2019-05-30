@@ -1,10 +1,10 @@
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 
 export const containerWidth = 80;
 export const mobileBreakpoint = 69; // ~780px
 export const desktopBreakpoint = mobileBreakpoint + 0.01;
-export const mobile = `screen and (max-width = ${mobileBreakpoint})`;
-export const desktop = `screen and (min-width = ${desktopBreakpoint})`;
+export const mobile = `screen and (max-width = ${mobileBreakpoint}rem)`;
+export const desktop = `screen and (min-width = ${desktopBreakpoint}rem)`;
 
 export const radius = '6pt';
 
@@ -20,11 +20,6 @@ export const white5 = `rgba(${white}, 0.50)`;
 export const white3 = `rgba(${white}, 0.30)`;
 export const white1 = `rgba(${white}, 0.10)`;
 
-export const column = '[column], [layout=column], .layout-column, .column';
-export const row = '[row], [layout=row], .layout-row, .row';
-export const mobileColumn = '[mobile-column], [mobile-layout=column], .mobile-layout-column, .mobile-column';
-export const mobileRow = '[mobile-row], [mobile-layout=row], .mobile-layout-row, .mobile-row';
-
 export const baseFont = `
   "Assistant",
   "Segoe UI",
@@ -38,11 +33,13 @@ export const baseFont = `
 export const baseLineHeight = 1.4;
 export const baseFontSize = '100%';
 
+export const primary = `rgba(${black}, 1.00)`;
 export const yellow = '#FFC300';
 export const red = '#da0642';
 export const green = '#27e486';
 
 export const inputPlaceholderColor = (color = black3) => {
+  let rule = '';
   const pseudos = [
     '::-webkit-input-placeholder',
     ':-moz-placeholder',
@@ -53,12 +50,11 @@ export const inputPlaceholderColor = (color = black3) => {
 
   // It is important to export every pseudo within its own block, because otherwise the placeholder
   // won't be set on the most browsers.
-  pseudos.forEach(pseudo => css`
-    &${pseudo} {
-      color: ${color};
-      text-shadow: none;
-    }
-  `);
+  pseudos.forEach((pseudo) => {
+    rule += `&${pseudo} { color: ${color}; text-shadow: none; }`;
+  });
+
+  return css(rule);
 };
 
 export const dragCursor = css`
@@ -88,3 +84,5 @@ export const selection = (color, bg) => css`
     text-shadow: none;
   }
 `;
+
+export const shadow = css`box-shadow: 0 1pt 3pt rgba(0, 0, 20, 0.15), 0 1pt 6pt rgba(0, 0, 20, .1);`;
