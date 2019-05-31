@@ -47,6 +47,7 @@ export default styled.div`
   flex-wrap: ${props => (props.wrap && 'wrap') || 'nowrap'};
 
   flex-direction: ${(column, reverse) => (column && 'column' && reverse && 'column-reverse')
+    || (column && 'column')
     || (reverse && 'row-reverse') || 'row'};
 
   ${props => align(props.align)}
@@ -58,6 +59,7 @@ export default styled.div`
     flex-wrap: ${props => (props.mobileWrap && 'wrap') || 'nowrap'};
 
     flex-direction: ${(mobileRow, mobileReverse) => (mobileRow && 'row' && mobileReverse && 'row-reverse')
+      || (mobileRow && 'row')
       || (mobileReverse && 'column-reverse') || 'column'};
   }
 `;
