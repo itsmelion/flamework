@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-export const containerWidth = 80;
+export const containerWidth = '80rem';
 export const mobileBreakpoint = 69; // ~780px
 export const desktopBreakpoint = mobileBreakpoint + 0.01;
 export const mobile = `screen and (max-width = ${mobileBreakpoint}rem)`;
