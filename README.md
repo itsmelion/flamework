@@ -18,9 +18,10 @@ ___
 
 - Direction and Wrap:
 ```html
-<div layout=column column nowrap>...</div>
-<div class="row nowrap mobile-wrap">...</div>
-<div mobile-layout=row mobile=column>...</div>
+<div layout=column column nowrap>[columns]</div>
+<div class="row nowrap mobile-wrap">[row but wraps in mobile]</div>
+<div mobile-layout=row mobile=column>[column | mobile rows]</div>
+<div class="row row-reverse" row="nowrap reverse">[reverse]</div>
 ```
 ___
 
@@ -68,6 +69,7 @@ ___
 
 ## Utils
 - .videoWrapper (makes video responsive 16:9)
+- .w100, .h100 (util: width or height 100%)
 - .hide-mobile, .hide-desktop, .show-mobile, .show-desktop (instruct display on breakpoints)
 
 ## Mixins

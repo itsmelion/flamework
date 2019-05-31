@@ -1,14 +1,4 @@
 /* scss.lint-disable-rule duplicateProperties */
-
-body {
-  font-family: $base-font;
-  line-height: $base-line-height;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .italic, .oblique, em, i { font-style: italic; }
 .bold, strong, b { font-weight: bold; }
 .regular, .normal, address { font-weight: normal; }

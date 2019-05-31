@@ -1,10 +1,11 @@
 {
   "name": "flamework",
-  "version": "3.1.6",
-  "description": "A flexbox SCSS lib. Light, non-intrusive with intuitive and clear syntax",
+  "version": "4.0.0-alpha5",
+  "description": "A flexbox SCSS/StyledComponent lib. Light, non-intrusive with intuitive and clear syntax",
   "homepage": "https://github.com/itsmelion/flamework#readme",
   "author": "Christhopher Lion <christhopherleao@icloud.com>",
-  "main": "index.scss",
+  "main": "./src/index.js",
+  "sass": "./index.scss",
   "keywords": [
     "alia",
     "flexbox",
@@ -27,5 +28,27 @@
   },
   "bugs": {
     "url": "https://github.com/itsmelion/flamework/issues"
+  },
+  "scripts": {
+    "lint:css": "stylelint './src/**/*.js'"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0",
+    "stylelint-scss": "^3.7.0"
+  },
+  "peerDependencies": {
+    "styled-components": ">= 4"
   }
 }

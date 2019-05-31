@@ -18,13 +18,30 @@
 .nowrap
 { flex-wrap: nowrap; }
 
+[row="reverse"],
+[row="nowrap reverse"],
+[row="wrap reverse"],
+[row="reverse nowrap"],
+[row="reverse wrap"],
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+[column="reverse"],
+[column="nowrap reverse"],
+[column="wrap reverse"],
+[column="reverse nowrap"],
+[column="reverse wrap"],
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
 [wrap],
 [row="wrap"],
 [column="wrap"],
 .wrap
 { flex-wrap: wrap; }
 
-[fill],
 .layout-fill,
 [layout-fill] {
   position: relative;
@@ -71,4 +88,22 @@
   [mobile-column="wrap"],
   .mobile-wrap
   { flex-wrap: wrap; }
+
+  [mobile-row="reverse"],
+  [mobile-row="nowrap reverse"],
+  [mobile-row="wrap reverse"],
+  [mobile-row="reverse nowrap"],
+  [mobile-row="reverse wrap"],
+  .mobile-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  [mobile-column="reverse"],
+  [mobile-column="nowrap reverse"],
+  [mobile-column="wrap reverse"],
+  [mobile-column="reverse nowrap"],
+  [mobile-column="reverse wrap"],
+  .mobile-column-reverse {
+    flex-direction: column-reverse;
+  }
 }

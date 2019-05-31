@@ -50,13 +50,18 @@ table {
   box-sizing: border-box;
 }
 
-html {
+:root, html, body {
   line-height: 1.2;
   text-size-adjust: 100%;
   color: inherit;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba($black, 0);
 }
+
+svg { shape-rendering: geometricPrecision;  }
 
 // IE10+ doesn't honor `<meta name="viewport">` in some cases.
 @at-root {
