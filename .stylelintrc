@@ -1,11 +1,22 @@
 {
-  "extends": "stylelint-config-recommended-scss",
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-styled-components"
+  ],
   "rules": {
     "block-no-empty": true,
     "color-no-invalid-hex": true,
     "declaration-colon-space-after": "always",
-    "indentation": [2],
-    "max-empty-lines": 2,
-    "unit-whitelist": ["em", "rem", "%", "s", "pt", "vh", "vw", "deg"]
+    "indentation": [
+      2,
+      {
+        "baseIndentLevel": 1
+      }
+    ],
+    "max-empty-lines": 2
   }
 }

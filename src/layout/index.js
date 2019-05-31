@@ -1,5 +1,8 @@
-import container from './container';
+import Container from './container';
+import Layout, { Flex } from './flex';
 
 export default {
-  container,
+  Container,
+  Layout,
+  Flex,
 };

@@ -11,7 +11,8 @@
   align-content: stretch;
   align-items: stretch;
 }
-// Main Axis Center
+
+// Main Axis Start
 [align="start"],
 [align="start start"],
 [align="start center"],
@@ -44,7 +45,7 @@
 [align="around start"],
 [align="around end"],
 [align="around stretch"] {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 // Main Axis Space Between
