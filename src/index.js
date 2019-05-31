@@ -10,11 +10,12 @@ export default {
   vars,
   reset,
   base,
-  layout,
   typography,
   utils,
   padding,
   margin,
   fill,
-  styles,
 };
+
+export const { Flex, Layout, Container } = layout;
+export const { Button } = styles;
