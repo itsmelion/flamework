@@ -1,6 +1,6 @@
 {
   "name": "flamework",
-  "version": "4.0.0-alpha6",
+  "version": "4.0.0-alpha7",
   "description": "A flexbox SCSS/StyledComponent lib. Light, non-intrusive with intuitive and clear syntax",
   "homepage": "https://github.com/itsmelion/flamework#readme",
   "author": "Christhopher Lion <christhopherleao@icloud.com>",
@@ -46,7 +46,7 @@
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
-    "stylelint-scss": "^3.7.0"
+    "stylelint-scss": "^3.8.0"
   },
   "peerDependencies": {
     "styled-components": ">= 4"
