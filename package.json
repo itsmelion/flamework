@@ -5,6 +5,7 @@
   "homepage": "https://github.com/itsmelion/flamework#readme",
   "author": "Christhopher Lion <christhopherleao@icloud.com>",
   "main": "./src/index.js",
+  "style": "./index.scss",
   "sass": "./index.scss",
   "keywords": [
     "alia",
