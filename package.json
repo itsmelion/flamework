@@ -38,7 +38,7 @@
     "lint:css": "stylelint './src/**/*.js'"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.0",
+    "babel-plugin-styled-components": "^1.10.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.17.3",
@@ -46,8 +46,8 @@
     "eslint-plugin-react": "^7.13.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "styled-components": "^4.2.1",
-    "stylelint": "^10.0.1",
+    "styled-components": "^4.3.1",
+    "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
