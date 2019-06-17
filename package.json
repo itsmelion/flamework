@@ -4,9 +4,13 @@
   "description": "A flexbox SCSS/StyledComponent lib. Light, non-intrusive with intuitive and clear syntax",
   "homepage": "https://github.com/itsmelion/flamework#readme",
   "author": "Christhopher Lion <christhopherleao@icloud.com>",
+  "type": "module",
   "main": "./src/index.js",
   "style": "./index.scss",
   "sass": "./index.scss",
+  "engines": {
+    "node": ">=12"
+  },
   "keywords": [
     "alia",
     "flexbox",
