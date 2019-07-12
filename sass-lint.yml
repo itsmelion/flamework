@@ -3,9 +3,3 @@ rules:
     - 2
     -
       size: 2
-  no-ids:
-    - 0
-  force-element-nesting:
-    - 0
-  no-qualifying-elements:
-    - 0

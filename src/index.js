@@ -1,4 +1,3 @@
-import * as vars from './vars';
 import reset from './reset';
 import base from './base';
 import layout from './layout';
@@ -7,7 +6,6 @@ import utils, { padding, margin, fill } from './utils';
 import styles from './styles';
 
 export default {
-  vars,
   reset,
   base,
   typography,

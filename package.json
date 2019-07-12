@@ -1,6 +1,6 @@
 {
   "name": "flamework",
-  "version": "4.0.0-alpha7",
+  "version": "4.0.0-alpha8",
   "description": "A flexbox SCSS/StyledComponent lib. Light, non-intrusive with intuitive and clear syntax",
   "homepage": "https://github.com/itsmelion/flamework#readme",
   "author": "Christhopher Lion <christhopherleao@icloud.com>",
@@ -38,20 +38,20 @@
     "lint:css": "stylelint './src/**/*.js'"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.1",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.13.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "styled-components": "^4.3.1",
+    "styled-components": "^4.3.2",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
-    "stylelint-scss": "^3.8.0"
+    "stylelint-scss": "^3.9.1"
   },
   "peerDependencies": {
     "styled-components": ">= 4"

@@ -1,23 +1,33 @@
 {
+  "parser": "babel-eslint",
   "extends": [
+    "standard",
+    "eslint:recommended",
     "airbnb"
   ],
   "plugins": [
-    "react"
+    "standard",
+    "import",
+    "promise",
+    "react",
+    "jsx-a11y"
   ],
+  "settings": { "import/resolver": { "node": { "paths": ["./src"] } } },
   "env": {
+    "es6": true,
     "browser": true,
-    "es6": true
-  },
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "node": true
   },
   "parserOptions": {
-    "ecmaFeatures": {
-        "jsx": true
-    },
     "ecmaVersion": 2019,
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "rules": {
+    "react/jsx-one-expression-per-line": 0,
+    "react/prop-types": 0
   }
 }
