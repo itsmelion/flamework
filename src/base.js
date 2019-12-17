@@ -2,6 +2,7 @@ import { css } from 'styled-components';
 import {
   primary, baseFont, baseLineHeight,
 } from './vars';
+import { containerWidth } from '../vars';
 
 export default css`
   :root, html, body {
@@ -41,6 +42,13 @@ export default css`
     height: auto;
     user-select: none;
     image-rendering: auto;
+  }
+
+  .contain {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: ${containerWidth};
+    width: 100%;
   }
 
   @media print {
