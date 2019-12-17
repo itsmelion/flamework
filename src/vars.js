@@ -8,7 +8,7 @@ export const desktop = `screen and (min-width = ${desktopBreakpoint}rem)`;
 
 export const radius = '6pt';
 
-export const black = '10%, 10%, 100%';
+export const black = '5%, 5%, 10%';
 export const black8 = `rgba(${black}, 0.70)`;
 export const black5 = `rgba(${black}, 0.50)`;
 export const black3 = `rgba(${black}, 0.25)`;
