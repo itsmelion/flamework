@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 import {
   primary, baseFont, baseLineHeight,
 } from './vars';
-import { containerWidth } from '../vars';
+import { containerWidth } from './vars';
 
 export default css`
   :root, html, body {
