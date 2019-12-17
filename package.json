@@ -39,21 +39,21 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6",
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.3.2",
-    "stylelint": "^10.1.0",
-    "stylelint-config-recommended-scss": "^3.3.0",
+    "eslint-plugin-react": "^7.17.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.0-regexrehydrate",
+    "stylelint": "^11.0.0",
+    "stylelint-config-recommended-scss": "^4.1.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.8.0",
-    "stylelint-scss": "^3.9.1"
+    "stylelint-processor-styled-components": "^1.9.0",
+    "stylelint-scss": "^3.13.0"
   },
   "peerDependencies": {
-    "styled-components": ">= 4"
+    "styled-components": ">=4"
   }
 }
