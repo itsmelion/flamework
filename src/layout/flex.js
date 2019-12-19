@@ -14,61 +14,51 @@ const flexNames = {
   noshrink: '1 0 auto',
 };
 
-const flexRules = (rule = 'none', mobileRule = 'none') => {
+const flexRules = (rule = 'none') => {
   if (typeof rule === 'string') {
     return css`
       flex: ${flexNames[rule]};
-      @media ${mobile} {
-        flex: ${flexNames[mobileRule]};
-      }
     `;
   }
 
   if (typeof rule === 'boolean') {
     return css`
       flex: ${flexNames.flex};
-      @media ${mobile} {
-        flex: ${flexNames[mobileRule || 'flex']};
-      }
     `;
   }
 
   return css`
     flex: 1 1 ${rule}%;
     max-width: ${rule}%;
-    @media ${mobile} {
-      flex: 1 1 ${mobileRule}%;
-      max-width: ${mobileRule}%;
-    }
   `;
 };
 
 export const Flex = styled.div`
-  ${(props) => flexRules(props.flex, props.mobileFlex)}
+  ${({ flex }) => flexRules(flex)}
+
+  @media ${mobile} {
+    ${({ mobileFlex }) => flexRules(mobileFlex)}
+  }
 `;
 
 export default styled.div`
   display: flex;
-  flex: 0 0 auto;
-  align-items: stretch;
-  align-content: stretch;
-  justify-content: flex-start;
   flex-wrap: ${(props) => (props.wrap && 'wrap') || 'nowrap'};
-
   flex-direction: ${(column, reverse) => (column && 'column' && reverse && 'column-reverse')
     || (column && 'column')
     || (reverse && 'row-reverse') || 'row'};
 
+  ${({ flex }) => flexRules(flex)}
   ${(props) => align(props.align)}
   ${(props) => props.fill && fill}
 
-  ${(props) => flexRules(props.flex, props.mobileFlex)}
-
   @media ${mobile} {
     flex-wrap: ${(props) => (props.mobileWrap && 'wrap') || 'nowrap'};
-    ${(props) => align(props.mobileAlign)}
     flex-direction: ${(mobileRow, mobileReverse) => (mobileRow && 'row' && mobileReverse && 'row-reverse')
       || (mobileRow && 'row')
       || (mobileReverse && 'column-reverse') || 'column'};
+
+    ${({ mobileFlex }) => flexRules(mobileFlex)}
+    ${(props) => align(props.mobileAlign)}
   }
 `;
