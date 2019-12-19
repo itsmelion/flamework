@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 import align from './align';
-import { mobile } from '../vars';
 import { fill } from '../utils';
 
 const flexNames = {
@@ -36,7 +35,7 @@ const flexRules = (rule = 'none') => {
 export const Flex = styled.div`
   ${({ flex }) => flexRules(flex)}
 
-  @media ${mobile} {
+  @media ${({theme}) => theme.mobile} {
     ${({ mobileFlex }) => flexRules(mobileFlex)}
   }
 `;
@@ -52,7 +51,7 @@ export default styled.div`
   ${(props) => align(props.align)}
   ${(props) => props.fill && fill}
 
-  @media ${mobile} {
+  @media ${({theme}) => theme.mobile} {
     flex-wrap: ${(props) => (props.mobileWrap && 'wrap') || 'nowrap'};
     flex-direction: ${(mobileRow, mobileReverse) => (mobileRow && 'row' && mobileReverse && 'row-reverse')
       || (mobileRow && 'row')

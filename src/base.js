@@ -1,8 +1,4 @@
 import { css } from 'styled-components';
-import {
-  primary, baseFont, baseLineHeight,
-} from './vars';
-import { containerWidth } from './vars';
 
 export default css`
   :root, html, body {
@@ -10,10 +6,10 @@ export default css`
     min-height: 100%;
     max-width: 100vw;
     height: 100%;
-    font-family: ${baseFont};
-    line-height: ${baseLineHeight};
+    font-family: ${({theme}) => theme.baseFont};
+    line-height: ${({theme}) => theme.baseLineHeight};
     font-weight: 300;
-    --theme: ${primary};
+    --theme: ${({theme}) => theme.primary};
   }
 
   button, p, i, a, h1, h2, h3, h4, h5, h6, b, sub, legend, sup {
@@ -47,7 +43,7 @@ export default css`
   .contain {
     margin-right: auto;
     margin-left: auto;
-    max-width: ${containerWidth};
+    max-width: ${({theme}) => theme.containerWidth};
     width: 100%;
   }
 

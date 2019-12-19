@@ -10,7 +10,7 @@ export default styled.button`
   color: currentColor;
   width: auto;
   background-color: white;
-  background-color: var(--theme, white);
+  background-color: var(--theme, ${({theme}) => theme.primary});
   display: inherit;
   white-space: nowrap;
   vertical-align: middle;

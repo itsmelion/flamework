@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { desktop, mobile } from './vars';
 
 export default css`
   .w100, .w-100 { width: 100%; }
@@ -48,7 +47,7 @@ export default css`
     display: none;
   }
 
-  @media ${mobile} {
+  @media ${({theme}) => theme.mobile} {
     .show-sm, .show-mobile {
       display: inherit;
     }
@@ -57,7 +56,7 @@ export default css`
     }
   }
 
-  @media ${desktop} {
+  @media ${({theme}) => theme.desktop} {
     .show-lg, .show-desktop {
       display: inherit;
     }

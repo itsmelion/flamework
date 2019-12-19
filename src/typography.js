@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { mobile } from './vars';
 
 export default css`
   .italic, .oblique, em, i { font-style: italic; }
@@ -23,7 +22,7 @@ export default css`
     font-size: 3.8vw;
     letter-spacing: -.025em;
     font-weight: 100;
-    @media ${mobile} {
+    @media ${({theme}) => theme.mobile} {
       font-size: 8vw;
     }
   }
@@ -33,7 +32,7 @@ export default css`
     font-size: 2.8vw;
     letter-spacing: -.025em;
     font-weight: 300;
-    @media ${mobile} {
+    @media ${({theme}) => theme.mobile} {
       font-size: 6vw;
     }
   }
