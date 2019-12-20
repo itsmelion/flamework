@@ -13,12 +13,15 @@ const flexNames = {
   noshrink: '1 0 auto',
 };
 
-const flexDirection = (row, reverse) => {
-  const direction = (row && 'row' && reverse && 'row-reverse')
-  || (reverse && 'column-reverse')
-  || 'column';
+const flexDirection = (row = false, reverse = false) => {
+  const direction = () => {
+    if (row && reverse) return 'row-reverse';
+    if (!row && reverse) return 'column-reverse';
+    if (row) return 'row';
+    return 'column';
+  };
 
-  return css`flex-direction: ${direction}`;
+  return css`flex-direction: ${direction()}`;
 };
 
 const Wrap = (wrap) => (wrap ? 'wrap' : 'nowrap');
