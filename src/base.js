@@ -2,6 +2,8 @@ import { css } from 'styled-components';
 
 export default css`
   :root, html, body {
+    --theme: ${({theme}) => theme.primary};
+    --textColor: ${({theme}) => theme.textColor};
     position: relative;
     min-height: 100%;
     max-width: 100vw;
@@ -9,7 +11,7 @@ export default css`
     font-family: ${({theme}) => theme.baseFont};
     line-height: ${({theme}) => theme.baseLineHeight};
     font-weight: 300;
-    --theme: ${({theme}) => theme.primary};
+    color: ${({theme}) => theme.textColor};
   }
 
   button, p, i, a, h1, h2, h3, h4, h5, h6, b, sub, legend, sup {

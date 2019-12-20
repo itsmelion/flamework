@@ -7,6 +7,7 @@ export default {
     yellow: vars.yellow,
     red: vars.red,
     green: vars.green,
+    textColor: vars.textColor,
 
     // Units
     radius: vars.radius,

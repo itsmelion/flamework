@@ -34,6 +34,7 @@ export const baseLineHeight = 1.4;
 export const baseFontSize = '100%';
 
 export const primary = `rgba(${black}, 1.00)`;
+export const textColor = black8;
 export const yellow = '#FFC300';
 export const red = '#da0642';
 export const green = '#27e486';
