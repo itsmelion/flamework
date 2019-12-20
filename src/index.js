@@ -1,9 +1,11 @@
 import reset from './reset';
 import base from './base';
-import layout from './layout';
 import typography from './typography';
 import utils, { padding, margin, fill } from './utils';
-import styles from './styles';
+
+export { default as theme } from './theme';
+export { Flex, Layout, Container } from './layout';
+export { Button } from './styles';
 
 export default {
   reset,
@@ -14,6 +16,3 @@ export default {
   margin,
   fill,
 };
-
-export const { Flex, Layout, Container } = layout;
-export const { Button } = styles;

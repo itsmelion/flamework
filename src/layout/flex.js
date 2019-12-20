@@ -41,7 +41,7 @@ const flexRules = (rule = 'none') => {
 export const Flex = styled.div`
   ${({ flex }) => flexRules(flex)}
 
-  @media ${({ theme }) => theme.mobile} {
+  @media screen and (max-width: ${({ theme }) => theme.mobile}) {
     ${({ mobileFlex }) => flexRules(mobileFlex)}
   }
 `;
@@ -54,7 +54,7 @@ export default styled.div`
   ${(props) => align(props.align)}
   ${(props) => props.fill && fill}
 
-  @media ${({ theme }) => theme.mobile} {
+  @media screen and (max-width: ${({ theme }) => theme.mobile}) {
     ${({ mobileRow, mobileReverse }) => flexDirection(mobileRow, mobileReverse)};
     flex-wrap: ${({ mobileWrap }) => Wrap(mobileWrap)};
     ${({ mobileFlex }) => flexRules(mobileFlex)}

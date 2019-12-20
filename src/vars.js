@@ -3,8 +3,6 @@ import { css } from 'styled-components';
 export const containerWidth = '80rem';
 export const mobileBreakpoint = 69; // ~780px
 export const desktopBreakpoint = mobileBreakpoint + 0.01;
-export const mobile = `screen and (max-width = ${mobileBreakpoint}rem)`;
-export const desktop = `screen and (min-width = ${desktopBreakpoint}rem)`;
 
 export const radius = '6pt';
 

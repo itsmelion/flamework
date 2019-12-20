@@ -1,8 +1,2 @@
-import Container from './container';
-import Layout, { Flex } from './flex';
-
-export default {
-  Container,
-  Layout,
-  Flex,
-};
+export { default as Container } from './container';
+export { default as Layout, Flex } from './flex';
