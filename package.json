@@ -39,6 +39,7 @@
     "url": "https://github.com/itsmelion/flamework/issues"
   },
   "scripts": {
+    "lint": "eslint --ext .jsx --ext .js --fix ./src",
     "lint:css": "stylelint './src/**/*.js'"
   },
   "devDependencies": {
@@ -47,11 +48,12 @@
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.17.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^5.0.0-regexrehydrate",
-    "stylelint": "^11.0.0",
+    "stylelint": "^11.1.1",
     "stylelint-config-recommended-scss": "^4.1.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.9.0",
@@ -79,5 +81,10 @@
       "unreleased versions",
       "not ie <= 11"
     ]
+  },
+  "optionalDependencies": {
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "react-is": "^16.12.0",
+    "stylis": "^3.5.4"
   }
 }

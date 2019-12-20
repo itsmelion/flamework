@@ -48,6 +48,11 @@ export default css`
     box-sizing: border-box;
   }
 
+  ::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button;
+  }
+
   :root, html, body {
     line-height: 1.2;
     text-size-adjust: 100%;
@@ -150,11 +155,6 @@ export default css`
   [type="number"]::-webkit-inner-spin-button,
   [type="number"]::-webkit-outer-spin-button {
     height: auto;
-  }
-
-  ::-webkit-file-upload-button {
-    font: inherit;
-    -webkit-appearance: button;
   }
 
   [hidden] {

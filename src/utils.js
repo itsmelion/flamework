@@ -47,7 +47,7 @@ export default css`
     display: none;
   }
 
-  @media ${({theme}) => theme.mobile} {
+  @media ${({ theme }) => theme.mobile} {
     .show-sm, .show-mobile {
       display: inherit;
     }
@@ -56,7 +56,7 @@ export default css`
     }
   }
 
-  @media ${({theme}) => theme.desktop} {
+  @media ${({ theme }) => theme.desktop} {
     .show-lg, .show-desktop {
       display: inherit;
     }

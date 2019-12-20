@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { shadow } from '../vars';
 
 export default styled.button`
@@ -18,7 +18,7 @@ export default styled.button`
   transition: color .1s linear, background-color .15s ease, border-color .15s ease, box-shadow .15s ease-in-out;
   cursor: pointer;
   background-color: white;
-  ${({theme}) => {
+  ${({ theme }) => {
     if (theme.primary) return css`background-color: var(--theme, ${theme.primary});`;
     return css`background-color: var(--theme);`;
   }};

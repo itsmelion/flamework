@@ -23,5 +23,5 @@ export default {
     baseFont: vars.baseFont,
     baseLineHeight: vars.baseLineHeight,
     baseFontSize: vars.baseFontSize,
-  }
-}
+  },
+};

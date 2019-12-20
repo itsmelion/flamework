@@ -1,12 +1,9 @@
 {
-  "parser": "babel-eslint",
   "extends": [
-    "standard",
     "eslint:recommended",
     "airbnb"
   ],
   "plugins": [
-    "standard",
     "import",
     "promise",
     "react",

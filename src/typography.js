@@ -22,7 +22,7 @@ export default css`
     font-size: 3.8vw;
     letter-spacing: -.025em;
     font-weight: 100;
-    @media ${({theme}) => theme.mobile} {
+    @media ${({ theme }) => theme.mobile} {
       font-size: 8vw;
     }
   }
@@ -32,7 +32,7 @@ export default css`
     font-size: 2.8vw;
     letter-spacing: -.025em;
     font-weight: 300;
-    @media ${({theme}) => theme.mobile} {
+    @media ${({ theme }) => theme.mobile} {
       font-size: 6vw;
     }
   }

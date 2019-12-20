@@ -2,16 +2,16 @@ import { css } from 'styled-components';
 
 export default css`
   :root, html, body {
-    --theme: ${({theme}) => theme.primary};
-    --textColor: ${({theme}) => theme.textColor};
+    --theme: ${({ theme }) => theme.primary};
+    --textColor: ${({ theme }) => theme.textColor};
     position: relative;
     min-height: 100%;
     max-width: 100vw;
     height: 100%;
-    font-family: ${({theme}) => theme.baseFont};
-    line-height: ${({theme}) => theme.baseLineHeight};
+    font-family: ${({ theme }) => theme.baseFont};
+    line-height: ${({ theme }) => theme.baseLineHeight};
     font-weight: 300;
-    color: ${({theme}) => theme.textColor};
+    color: ${({ theme }) => theme.textColor};
   }
 
   button, p, i, a, h1, h2, h3, h4, h5, h6, b, sub, legend, sup {
@@ -45,7 +45,7 @@ export default css`
   .contain {
     margin-right: auto;
     margin-left: auto;
-    max-width: ${({theme}) => theme.containerWidth};
+    max-width: ${({ theme }) => theme.containerWidth};
     width: 100%;
   }
 

@@ -21,7 +21,7 @@ const flexDirection = (row, reverse) => {
   return css`flex-direction: ${direction}`;
 };
 
-const Wrap = (wrap) => wrap ? 'wrap' : 'nowrap';
+const Wrap = (wrap) => (wrap ? 'wrap' : 'nowrap');
 
 const flexRules = (rule = 'none') => {
   if (typeof rule === 'string') {
@@ -41,7 +41,7 @@ const flexRules = (rule = 'none') => {
 export const Flex = styled.div`
   ${({ flex }) => flexRules(flex)}
 
-  @media ${({theme}) => theme.mobile} {
+  @media ${({ theme }) => theme.mobile} {
     ${({ mobileFlex }) => flexRules(mobileFlex)}
   }
 `;
@@ -54,7 +54,7 @@ export default styled.div`
   ${(props) => align(props.align)}
   ${(props) => props.fill && fill}
 
-  @media ${({theme}) => theme.mobile} {
+  @media ${({ theme }) => theme.mobile} {
     ${({ mobileRow, mobileReverse }) => flexDirection(mobileRow, mobileReverse)};
     flex-wrap: ${({ mobileWrap }) => Wrap(mobileWrap)};
     ${({ mobileFlex }) => flexRules(mobileFlex)}
