@@ -13,17 +13,23 @@ const flexNames = {
   noshrink: '1 0 auto',
 };
 
+const flexDirection = (row, reverse) => {
+  const direction = (row && 'row' && reverse && 'row-reverse')
+  || (reverse && 'column-reverse')
+  || 'column';
+
+  return css`flex-direction: ${direction}`;
+};
+
+const Wrap = (wrap) => wrap ? 'wrap' : 'nowrap';
+
 const flexRules = (rule = 'none') => {
   if (typeof rule === 'string') {
-    return css`
-      flex: ${flexNames[rule]};
-    `;
+    return css`flex: ${flexNames[rule]};`;
   }
 
   if (typeof rule === 'boolean') {
-    return css`
-      flex: ${flexNames.flex};
-    `;
+    return css`flex: ${flexNames.flex};`;
   }
 
   return css`
@@ -42,22 +48,16 @@ export const Flex = styled.div`
 
 export default styled.div`
   display: flex;
-  flex-wrap: ${(props) => (props.wrap && 'wrap') || 'nowrap'};
-  flex-direction: ${(column, reverse) => (column && 'column' && reverse && 'column-reverse')
-    || (column && 'column')
-    || (reverse && 'row-reverse') || 'row'};
-
+  ${({ row, reverse }) => flexDirection(row, reverse)};
+  flex-wrap: ${({ wrap }) => Wrap(wrap)};
   ${({ flex }) => flexRules(flex)}
   ${(props) => align(props.align)}
   ${(props) => props.fill && fill}
 
   @media ${({theme}) => theme.mobile} {
-    flex-wrap: ${(props) => (props.mobileWrap && 'wrap') || 'nowrap'};
-    flex-direction: ${(mobileRow, mobileReverse) => (mobileRow && 'row' && mobileReverse && 'row-reverse')
-      || (mobileRow && 'row')
-      || (mobileReverse && 'column-reverse') || 'column'};
-
+    ${({ mobileRow, mobileReverse }) => flexDirection(mobileRow, mobileReverse)};
+    flex-wrap: ${({ mobileWrap }) => Wrap(mobileWrap)};
     ${({ mobileFlex }) => flexRules(mobileFlex)}
-    ${(props) => align(props.mobileAlign)}
+    ${({ mobileAlign }) => align(mobileAlign)}
   }
 `;
