@@ -29,6 +29,7 @@ export default css`
     text-decoration: none;
     transition: color .2s;
     cursor: pointer;
+    color: unset;
     &:hover {
       text-decoration: underline;
     }

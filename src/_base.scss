@@ -61,6 +61,8 @@ header {
 a[href], .link, :link, :any-link {
   text-decoration: none;
   transition: color .2s;
+  color: unset;
+  // color: currentColor; ?
   cursor: pointer;
   &:hover {
     text-decoration: underline;
