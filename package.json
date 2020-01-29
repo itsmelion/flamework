@@ -3,41 +3,10 @@
   "version": "4.0.0-beta7",
   "description": "A flexbox SCSS/StyledComponent lib. Light, non-intrusive with intuitive and clear syntax",
   "homepage": "https://github.com/itsmelion/flamework#readme",
-  "author": {
-    "name": "Christhopher Lion",
-    "email": "christhopherlion@icloud.com",
-    "url": "https://lion.alia.ml/"
-  },
   "type": "module",
   "main": "./src/index.js",
   "style": "./index.scss",
   "sass": "./index.scss",
-  "engines": {
-    "node": ">=12"
-  },
-  "keywords": [
-    "alia",
-    "flexbox",
-    "framework",
-    "css",
-    "grid",
-    "bootstrap",
-    "gridlex",
-    "flexboxgrid",
-    "flamework",
-    "firework",
-    "flameworks",
-    "fireworks"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/itsmelion/flamework.git",
-    "https": "https://github.com/itsmelion/flamework.git"
-  },
-  "bugs": {
-    "url": "https://github.com/itsmelion/flamework/issues"
-  },
   "scripts": {
     "lint": "eslint --ext .jsx --ext .js --fix ./src",
     "lint:css": "stylelint './src/**/*.js'"
@@ -86,5 +55,36 @@
       "unreleased versions",
       "not ie <= 11"
     ]
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "keywords": [
+    "alia",
+    "flexbox",
+    "framework",
+    "css",
+    "grid",
+    "bootstrap",
+    "gridlex",
+    "flexboxgrid",
+    "flamework",
+    "firework",
+    "flameworks",
+    "fireworks"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Christhopher Lion",
+    "email": "christhopherlion@icloud.com",
+    "url": "https://lion.alia.ml/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/itsmelion/flamework.git",
+    "https": "https://github.com/itsmelion/flamework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsmelion/flamework/issues"
   }
 }
