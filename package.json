@@ -34,7 +34,7 @@
   "optionalDependencies": {
     "eslint-plugin-react-hooks": "2.5.0",
     "react-is": "16.13.0",
-    "stylis": "3.5.4"
+    "stylis": "4.0.2"
   },
   "browserslist": {
     "production": [
