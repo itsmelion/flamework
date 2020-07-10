@@ -32,7 +32,7 @@
     "styled-components": ">=4"
   },
   "optionalDependencies": {
-    "eslint-plugin-react-hooks": "2.5.0",
+    "eslint-plugin-react-hooks": "4.0.6",
     "react-is": "16.13.0",
     "stylis": "3.5.4"
   },
