@@ -12,16 +12,15 @@ updates:
     directory: "/"
     # Check the npm registry for updates every day (weekdays)
     schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "[skip netlify]"
+      interval: "weekly"
+      day: "saturday"
 
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "sunday"
+      day: "saturday"
 
   # # Enable version updates for Docker
   # - package-ecosystem: "docker"
