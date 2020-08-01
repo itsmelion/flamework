@@ -1,6 +1,6 @@
 {
   "name": "flamework",
-  "version": "4.0.0-beta8",
+  "version": "4.0.0",
   "description": "A flexbox SCSS/StyledComponent lib. Light, non-intrusive with intuitive and clear syntax",
   "homepage": "https://github.com/itsmelion/flamework#readme",
   "type": "module",
@@ -8,33 +8,38 @@
   "style": "./index.scss",
   "sass": "./index.scss",
   "scripts": {
-    "lint": "eslint --ext .jsx --ext .js --fix ./src",
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}' --fix ./src",
     "lint:css": "stylelint './src/**/*.js'"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "1.10.7",
-    "eslint": "6.8.0",
+    "babel-eslint": "10.1.0",
+    "babel-plugin-styled-components": "1.11.1",
+    "eslint": "7.5.0",
     "eslint-config-airbnb": "18.2.0",
-    "eslint-plugin-import": "2.20.1",
-    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-config-lion": "1.1.2",
+    "eslint-config-promise": "2.0.2",
+    "eslint-config-react": "1.1.7",
+    "eslint-config-standard": "14.1.1",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-react": "7.20.5",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
-    "styled-components": "5.0.1",
-    "stylelint": "13.2.1",
+    "eslint-plugin-react-hooks": "4.0.8",
+    "eslint-plugin-standard": "4.0.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-is": "16.13.1",
+    "styled-components": "5.1.1",
+    "stylelint": "13.6.1",
     "stylelint-config-recommended-scss": "4.2.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.10.0",
-    "stylelint-scss": "3.15.0"
+    "stylelint-scss": "3.18.0"
   },
   "peerDependencies": {
     "styled-components": ">=4"
-  },
-  "optionalDependencies": {
-    "eslint-plugin-react-hooks": "4.0.6",
-    "react-is": "16.13.0",
-    "stylis": "3.5.4"
   },
   "browserslist": {
     "production": [

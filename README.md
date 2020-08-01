@@ -1,12 +1,13 @@
-Flamework 🔥
---
-A *flexbox SCSS* lib. Light, non-intrusive with intuitive and clear syntax to _put your project ablaze!_
+## Flamework 🔥
+A SCSS/Styled-components layouting lib.
+Lightweight, non-intrusive with intuitive and clear syntax to _put your project ablaze!_
 
-- [Flamework 🔥](#flamework-%F0%9F%94%A5)
+- [Flamework 🔥](#flamework-)
 - [Layout](#layout)
 - [Utils](#utils)
 - [Mixins](#mixins)
 - [Vars](#vars)
+
 ___
 ## Layout
 
