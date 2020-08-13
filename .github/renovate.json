@@ -2,6 +2,14 @@
   "extends": [
     "config:base"
   ],
+  "rangeStrategy": "pin",
+  "commitBody": "[skip ci]",
+  "timezone": "Europe/Lisbon",
+  "schedule": "before 10am every day",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "before 10am on monday"
+  },
   "packageRules": [
     {
       "updateTypes": ["major", "minor", "patch", "pin", "digest"],
