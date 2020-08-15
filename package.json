@@ -14,7 +14,7 @@
   "devDependencies": {
     "babel-eslint": "10.1.0",
     "babel-plugin-styled-components": "1.11.1",
-    "eslint": "7.6.0",
+    "eslint": "7.7.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-config-lion": "1.1.5",
     "eslint-config-promise": "2.0.2",
