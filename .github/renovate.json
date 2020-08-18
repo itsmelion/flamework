@@ -10,6 +10,20 @@
     {
       "updateTypes": ["major", "minor", "patch", "pin", "digest"],
       "automerge": true
+    },
+    {
+      "packagePatterns": [
+        "*"
+      ],
+      "rangeStrategy": "pin"
+    },
+    {
+      "depTypeList": [
+        "engines",
+        "peerDependencies",
+        "resolutions"
+      ],
+      "rangeStrategy": "auto"
     }
   ]
 }
