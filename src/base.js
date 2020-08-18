@@ -8,9 +8,10 @@ export default css`
     min-height: 100%;
     max-width: 100vw;
     height: 100%;
+    font-weight: 300;
+    font-feature-settings: "kern", "liga", "clig", "calt";
     font-family: ${({ theme }) => theme.baseFont};
     line-height: ${({ theme }) => theme.baseLineHeight};
-    font-weight: 300;
     color: ${({ theme }) => theme.textColor};
   }
 
