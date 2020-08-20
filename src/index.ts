@@ -5,7 +5,13 @@ import utils, { padding, margin, fill } from './utils';
 
 export { default as theme } from './theme';
 export { Flex, Layout, Container } from './layout';
-export { Button } from './styles';
+
+// Typography
+export { default as Text } from './components/Text/Text';
+
+// Basic components
+export { default as Button } from './components/Button/Button';
+export { default as Input } from './components/Input/Input';
 
 export default {
   reset,

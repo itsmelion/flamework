@@ -1,0 +1,10 @@
+node_modules
+dist
+build
+tests
+styleguide.config.js
+jest.config.js
+
+src/**/*.test.tsx
+src/**/*.md
+src/serviceWorker.ts

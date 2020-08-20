@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn",
+  "git.fetchOnPull": true,
+}

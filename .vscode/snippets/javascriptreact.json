@@ -1,0 +1,55 @@
+{
+  "import lodash": {
+		"scope": "javascript,typescript,javascriptreact",
+		"prefix": "lodash",
+		"body": "import _ from 'lodash';",
+		"description": "import lodash"
+  },
+  "import async hook": {
+		"scope": "javascript,typescript,javascriptreact",
+		"prefix": "async-hook",
+		"body": "import { useAsync$1 } from 'react-async-hook';",
+		"description": "import async hook"
+  },
+  "effect-hook": {
+		"scope": "javascript,typescript,javascriptreact",
+		"prefix": "useeffect",
+		"body": [
+      "useEffect(() => {",
+      "  $1",
+      "},",
+      "[$2]);"
+    ],
+		"description": "util for extracting hydra member"
+  },
+
+  "hook-async": {
+		"scope": "javascript,typescript,javascriptreact",
+		"prefix": "asynchooks",
+		"body": "import { useAsync } from 'react-async-hook';",
+		"description": "import async hook"
+  },
+
+  "component": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "component,func",
+    "body": [
+      "import React from 'react';",
+      "import { Container } from 'flamework';",
+      "",
+      "// import { Wrapper } from './$1.styled';",
+      "",
+      "const $1 = () => {",
+      "  const content = 'Hey!';",
+      "",
+      "  return (",
+      "    <Container>{content}</Container>",
+      "  );",
+      "};",
+      "",
+      "export default React.memo($1);",
+      ""
+    ],
+    "description": "basic react component"
+  }
+}

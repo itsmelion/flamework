@@ -4,3 +4,6 @@ tests
 coverage
 .github
 .vscode
+netlify.toml
+styleguide.config.js
+jest.config.js

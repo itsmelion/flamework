@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-export const containerWidth = '80rem';
+export const containerWidth = '84rem';
 export const mobileBreakpoint = 69; // ~780px
 export const desktopBreakpoint = mobileBreakpoint + 0.01;
 
@@ -84,4 +84,7 @@ export const selection = (color, bg) => css`
   }
 `;
 
-export const shadow = css`box-shadow: 0 1pt 3pt rgba(0, 0, 20, 0.15), 0 1pt 6pt rgba(0, 0, 20, .1);`;
+export const shadow = css`
+  box-shadow: 0 1pt 3pt rgba(0, 0, 20, 0.15),
+    0 1pt 6pt rgba(0, 0, 20, .1);
+`;
