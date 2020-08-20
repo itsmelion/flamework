@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "rebornix.project-snippets",
+    "editorconfig.editorconfig",
+    "aaron-bond.better-comments",
+    "mgmcdermott.vscode-language-babel"
+  ]
+}

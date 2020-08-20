@@ -1,0 +1,3 @@
+```jsx
+  <Text>Text</Text>
+```

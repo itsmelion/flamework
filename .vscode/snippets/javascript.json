@@ -1,0 +1,37 @@
+{
+  "import-R": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "import react",
+    "body": "import React, { $1 } from 'react';",
+    "description": "import react"
+  },
+  "import-R-alone": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "import react alone",
+    "body": "import React from 'react';",
+    "description": "import react"
+  },
+  "import-styled": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "import styled",
+    "body": "import styled from 'styled-components';",
+    "description": "import styled-components"
+  },
+  "import-lodash": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "import lodash",
+    "body": "import _ from 'lodash';",
+    "description": "import lodash"
+  },
+  "effect-hook": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "useeffect",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "},",
+      "[$2]);"
+    ],
+    "description": "util for extracting hydra member"
+  }
+}
