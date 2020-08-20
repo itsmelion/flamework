@@ -15,9 +15,13 @@ export default styled.button`
   border: 1pt solid transparent;
   padding: .4em .8em;
   border-radius: .15em;
-  transition: color .1s linear, background-color .15s ease, border-color .15s ease, box-shadow .15s ease-in-out;
   cursor: pointer;
   background-color: white;
+  transition: color .1s linear,
+    background-color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease-in-out;
+
   ${({ theme }) => {
     if (theme.primary) return css`background-color: var(--theme, ${theme.primary});`;
     return css`background-color: var(--theme);`;

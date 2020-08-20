@@ -1,13 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
-import flamework from 'flamework';
+import reset from '../reset';
+import typography from '../typography';
+import utils, { padding, margin, fill } from '../utils';
 
 export default createGlobalStyle`
-  ${flamework.reset}
-  ${flamework.typography}
-  ${flamework.utils}
-  ${flamework.padding}
-  ${flamework.margin}
-  ${flamework.fill}
+  ${reset}
+  ${typography}
+  ${utils}
+  ${padding}
+  ${margin}
+  ${fill}
 
   :root, html, body {
     height: 100%;

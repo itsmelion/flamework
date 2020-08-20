@@ -1,6 +1,6 @@
 import React from 'react';
-import { Layout } from 'flamework';
 import _ from 'lodash';
+import { Layout } from '../../layout';
 
 const InputErrors = ({ error }) => {
   if (!error || _.isEmpty(error)) return null;

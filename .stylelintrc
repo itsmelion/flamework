@@ -13,10 +13,13 @@
     "declaration-colon-space-after": "always",
     "indentation": [
       2,
-      {
-        "baseIndentLevel": 1
-      }
+      { "baseIndentLevel": 1 }
     ],
-    "max-empty-lines": 2
+    "max-empty-lines": 2,
+    "number-max-precision": 3,
+    "selector-max-universal": 2,
+    "length-zero-no-unit": true,
+    "declaration-block-no-duplicate-properties": true,
+    "number-no-trailing-zeros": true
   }
 }

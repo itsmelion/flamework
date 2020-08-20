@@ -34,7 +34,6 @@ export default css`
   }
   blockquote:before, blockquote:after,
   q:before, q:after {
-    content: '';
     content: none;
   }
   table {
@@ -50,7 +49,7 @@ export default css`
 
   ::-webkit-file-upload-button {
     font: inherit;
-    -webkit-appearance: button;
+    appearance: button;
   }
 
   :root, html, body {
@@ -78,7 +77,7 @@ export default css`
 
   a {
     background-color: transparent;
-    -webkit-text-decoration-skip: objects;
+    text-decoration-skip: objects;
     &:-webkit-any-link {
       color: currentColor;
     }
@@ -103,7 +102,7 @@ export default css`
   html [type="button"],
   [type="reset"],
   [type="submit"] {
-    -webkit-appearance: button;
+    appearance: button;
   }
 
 
@@ -117,8 +116,7 @@ export default css`
     }
 
     &:focus {
-      outline: 1px dotted;
-      outline: 5px auto -webkit-focus-ring-color;
+      outline: 1px auto transparent;
     }
   }
 
@@ -134,7 +132,7 @@ export default css`
   input[type="time"],
   input[type="datetime-local"],
   input[type="month"] {
-    -webkit-appearance: listbox;
+    appearance: listbox;
   }
 
   textarea {

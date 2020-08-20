@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { theme } from 'flamework';
+
+import theme from '../theme';
 import GlobalStyles from './Global.styled';
 
 interface Props {
