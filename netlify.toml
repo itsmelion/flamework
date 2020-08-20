@@ -85,10 +85,9 @@
   to = "/index.html"
   status = 200
 
-# The following redirect is intended for use with most SPA's that handles routing internally.
 # [[redirects]]
-#   from = "https://cook-habits.netlify.app/*"
-#   to = "https://cook.habtic.tk/:splat"
+#   from = "https://MY_APP.netlify.app/*"
+#   to = "https://MY_APP.domain/:splat"
 #   status = 200
 
 # [[redirects]]
