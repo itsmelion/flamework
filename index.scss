@@ -2,21 +2,21 @@
  * FlameWork 🔥
  * @author Christhopher Lion <christhopherleao@icloud.com>
  * https://github.com/itsmelion/flamework
- * @license GPL-3.0
+ * @license MIT
 */
 
-@import 'vars';
-@import './src/reset';
-@import './src/layout';
-@import './src/align';
-@import './src/flex';
+@import './src/sass/vars';
+@import './src/sass/reset';
+@import './src/sass/layout';
+@import './src/sass/align';
+@import './src/sass/flex';
 
-@import './src/base';
-@import './src/typography';
+@import './src/sass/base';
+@import './src/sass/typography';
 
 /**
 ** Thinking about to turn it optional */
-@import 'utilities';
+@import './src/sass/utilities';
 
 @media print {
   [hide-print]:not([show-print]):not([show]), .hide-print
