@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { shadow } from '../vars';
+import { shadow } from '../../vars';
 
 export default styled.button`
   width: auto;

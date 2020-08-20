@@ -10,7 +10,7 @@ export { Flex, Layout, Container } from './layout';
 export { default as Text } from './components/Text/Text';
 
 // Basic components
-export { Button } from './styles';
+export { default as Button } from './components/Button/Button';
 export { default as Input } from './components/Input/Input';
 
 export default {
