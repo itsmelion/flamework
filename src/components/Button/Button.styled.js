@@ -6,7 +6,7 @@ export default styled.button`
   user-select: none;
   line-height: 1.2;
   letter-spacing: -.2pt;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1.1em;
   white-space: nowrap;
   color: currentColor;

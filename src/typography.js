@@ -19,22 +19,14 @@ export default css`
 
   h1 {
     font-size: 2.5em;
-    font-size: 3.8vw;
     letter-spacing: -.025em;
     font-weight: 100;
-    @media screen and (max-width: ${({ theme }) => theme.mobile}) {
-      font-size: 8vw;
-    }
   }
 
   h2 {
     font-size: 2em;
-    font-size: 2.8vw;
     letter-spacing: -.025em;
     font-weight: 300;
-    @media screen and (max-width: ${({ theme }) => theme.mobile}) {
-      font-size: 6vw;
-    }
   }
 
   h3 {

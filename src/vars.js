@@ -24,10 +24,9 @@ export const baseFont = `
   "Open Sans",
   -apple-system,
   BlinkMacSystemFont,
-  "Segoe UI",
   "Roboto",
   "Helvetica Neue", Arial, sans-serif,
-  "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"`;
+  "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"`.replace(/\r?\n|\r/g, ' ');
 export const baseLineHeight = 1.4;
 export const baseFontSize = '100%';
 
