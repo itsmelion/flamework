@@ -3,6 +3,7 @@
     "config:base"
   ],
   "commitBody": "[skip ci]",
+  "commitMessageSuffix": "[skip netlify]"
   "lockFileMaintenance": {
     "enabled": true
   },
