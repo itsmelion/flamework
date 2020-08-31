@@ -5224,7 +5224,7 @@ escodegen@^1.11.0, escodegen@^1.12.0, escodegen@^1.14.1, escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-airbnb-base@>=13.0.0, eslint-config-airbnb-base@^14.2.0:
+eslint-config-airbnb-base@*, eslint-config-airbnb-base@^14.2.0:
   version "14.2.0"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.0.tgz#fe89c24b3f9dc8008c9c0d0d88c28f95ed65e9c4"
   integrity sha512-Snswd5oC6nJaevs3nZoLSTvGJBvzTfnBqOIArkf3cbyTyq9UD79wOk8s+RiL6bhca0p/eRO6veczhf6A/7Jy8Q==
@@ -5242,15 +5242,19 @@ eslint-config-airbnb@18.2.0:
     object.assign "^4.1.0"
     object.entries "^1.1.2"
 
-eslint-config-lion@2.0.0-beta3:
-  version "2.0.0-beta3"
-  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.0.0-beta3.tgz#24d0ad35a3ef6b343b64c5ba4b00118a6fbf7923"
-  integrity sha512-G72zZwvJVpsVoIJGxXptqf1/vhnlC+/FRuIBZR6qbYPHcpAY93QCDj9EeaDYfgVKgFatHRW4UBj3Xmx05ALgOg==
+eslint-config-lion@2.0.0-beta4:
+  version "2.0.0-beta4"
+  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.0.0-beta4.tgz#cbc2b7820647f76cd8d16529cc016355fb415b3b"
+  integrity sha512-lBr8lJsffIMXlAvRcJaP+yBSyJb4yUCP0toQKK0eSbQjB3FKiyVCcLL0Acsa6e1NamiDH+lE6rmWfkfRei70EQ==
   dependencies:
     eslint ">=6.0.0"
-    eslint-config-airbnb-base ">=13.0.0"
+    eslint-config-airbnb-base "*"
+    eslint-config-promise "*"
+    eslint-config-standard "*"
+    eslint-plugin-promise "*"
+    eslint-plugin-standard "*"
 
-eslint-config-promise@2.0.2:
+eslint-config-promise@*, eslint-config-promise@2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/eslint-config-promise/-/eslint-config-promise-2.0.2.tgz#5a0e88fa97b7862dba519d1779af67b2f0e8fde9"
   integrity sha512-x9vDROBRScaSowOly5xudziBFoeSGTbk2qZ5fmAeF9hFQa/WloJBPBf+ICKWknoEDGQuxGd3nCs8o1mLRf+ujg==
@@ -5270,7 +5274,7 @@ eslint-config-react@1.1.7:
   resolved "https://registry.yarnpkg.com/eslint-config-react/-/eslint-config-react-1.1.7.tgz#a0918d0fc47d0e9bd161a47308021da85d2585b3"
   integrity sha1-oJGND8R9DpvRYaRzCAIdqF0lhbM=
 
-eslint-config-standard@14.1.1:
+eslint-config-standard@*, eslint-config-standard@14.1.1:
   version "14.1.1"
   resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-14.1.1.tgz#830a8e44e7aef7de67464979ad06b406026c56ea"
   integrity sha512-Z9B+VR+JIXRxz21udPTL9HpFMyoMUEeX1G251EQ6e05WD9aPVtVBn09XUmZ259wCMlCDmYDSZG62Hhm+ZTJcUg==
@@ -5403,7 +5407,7 @@ eslint-plugin-node@11.1.0:
     resolve "^1.10.1"
     semver "^6.1.0"
 
-eslint-plugin-promise@4.2.1:
+eslint-plugin-promise@*, eslint-plugin-promise@4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.2.1.tgz#845fd8b2260ad8f82564c1222fce44ad71d9418a"
   integrity sha512-VoM09vT7bfA7D+upt+FjeBO5eHIJQBUWki1aPvB+vbNiHS3+oGIJGIeyBtKQTME6UPXXy3vV07OL1tHd3ANuDw==
@@ -5453,7 +5457,7 @@ eslint-plugin-react@7.20.6:
     resolve "^1.17.0"
     string.prototype.matchall "^4.0.2"
 
-eslint-plugin-standard@4.0.1:
+eslint-plugin-standard@*, eslint-plugin-standard@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-4.0.1.tgz#ff0519f7ffaff114f76d1bd7c3996eef0f6e20b4"
   integrity sha512-v/KBnfyaOMPmZc/dmc6ozOdWqekGp7bBGq4jLAecEfPGmfKiWS4sA8sC0LqiV9w5qmXAtXVn4M3p1jSyhY85SQ==
