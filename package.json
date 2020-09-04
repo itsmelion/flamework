@@ -79,7 +79,7 @@
     "react-scripts": "3.4.3",
     "react-styleguidist": "11.0.10",
     "react-test-renderer": "16.13.1",
-    "styled-components": "5.1.1",
+    "styled-components": "5.2.0",
     "stylelint": "13.7.0",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-recommended-scss": "4.2.0",
