@@ -20,9 +20,6 @@
     "start": "yarn styleguide",
     "prepublish": "yarn build",
     "build": "NODE_ENV=production tsc -b",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:update": "jest -u",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}' --fix ./src",
     "lint:ci": "eslint '**/*.{js,jsx,ts,tsx}' --quiet ./src",
     "lint:css": "stylelint './src/**/*.js'"
