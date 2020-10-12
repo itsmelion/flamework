@@ -4,14 +4,10 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../theme';
 import GlobalStyles from './Global.styled';
 
-interface Props {
-  children: React.ReactChild | React.ReactChildren
-}
-
-const ThemeWrapper: React.FunctionComponent<Props> = ({ children }) => (
+export const ThemeWrapper: React.FC = ({ children }) => (
   <ThemeProvider theme={theme}>
-    {children}
     <GlobalStyles />
+    {children}
   </ThemeProvider>
 );
 

@@ -4,6 +4,7 @@ import typography from './typography';
 import utils, { padding, margin, fill } from './utils';
 
 export { default as theme } from './theme';
+export { ThemeWrapper as ThemeProvider } from './theme/ThemeWrapper';
 export { Flex, Layout, Container } from './layout';
 
 // Typography
