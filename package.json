@@ -26,13 +26,13 @@
   },
   "resolutions": {
     "core-js": ">=3.0.0",
-    "chokidar": ">=3"
+    "chokidar": "3.4.3"
   },
   "peerDependencies": {
     "styled-components": ">=4"
   },
   "dependencies": {
-    "chokidar": ">=3",
+    "chokidar": "3.4.3",
     "lodash": "4.17.20"
   },
   "devDependencies": {
