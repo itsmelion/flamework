@@ -12,32 +12,29 @@ interface IError {
   type: string,
 }
 
-enum inputTypes {
-  color,
-  date,
-  'datetime-local',
-  email,
-  hidden,
-  image,
-  month,
-  number,
-  password,
-  search,
-  tel,
-  text,
-  time,
-  url,
-  week,
-  file,
-}
-type InputTypes = keyof typeof inputTypes;
+type InputTypes = 'color'|
+'date'|
+'datetime-local'|
+'email'|
+'hidden'|
+'image'|
+'month'|
+'number'|
+'password'|
+'search'|
+'tel'|
+'text'|
+'time'|
+'url'|
+'week'|
+'file';
 
 export interface IProps {
   id: string;
+  type: InputTypes;
   name?: string,
   label?: string;
   placeholder?: string;
-  type?: InputTypes;
   children?: React.ReactNode;
   containerProps?: IContainerProps;
   required?: boolean,
@@ -50,8 +47,8 @@ export interface IProps {
   error?: IError,
 }
 
-const Input: React.FC = ({
-  label, id, type = 'text', children, name, containerProps,
+const Input = ({
+  label, id, type, children, name, containerProps,
   ref, innerRef, error, ...props
 }: IProps) => (
   <Wrapper {...containerProps}>
@@ -84,9 +81,9 @@ Input.defaultProps = {
   value: undefined,
   autoComplete: 'on',
   containerProps: {},
-  innerRef?: undefined,
-  ref?: undefined,
-  error?: undefined,
+  innerRef: undefined,
+  ref: undefined,
+  error: undefined,
 };
 
 export default React.memo(Input);
