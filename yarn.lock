@@ -4831,10 +4831,10 @@ eslint-config-airbnb@18.2.0:
     object.assign "^4.1.0"
     object.entries "^1.1.2"
 
-eslint-config-lion@2.0.0-beta10:
-  version "2.0.0-beta10"
-  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.0.0-beta10.tgz#78fa653a4ff85301f71f9bd93e77b877e606e71c"
-  integrity sha512-civ7vhFnUSemChOVvCXTo9Lsn2jtjM4lC4H4SpN3t66+pYmEBrvcEPSLennF/WTlzAYlykpHy+6Hfz++Z6JTQA==
+eslint-config-lion@2.0.0-beta10.1:
+  version "2.0.0-beta10.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.0.0-beta10.1.tgz#2f4f0693502a799256bc0e7c146dfde6d761757a"
+  integrity sha512-kHiz80vYAnVynI9iNwtOYHpW5cterUiGgk7Jvsfo5FRQTKvcQMPZ/Oy5agN5Ve2pQu6XUweG8gmhUkd04jSnAQ==
   dependencies:
     babel-eslint "10.1.0"
     eslint "7.11.0"
