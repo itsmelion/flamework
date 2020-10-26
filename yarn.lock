@@ -12520,9 +12520,9 @@ typescript-plugin-styled-components@1.4.4:
   integrity sha512-w5S5lSpzRFM+61KNNpGtlF46DuTJTyzfWM4g6ic9m189ILEoU3sgoTNHNS2MxQhXsGtQZwAlINKG+Dwy0euwUg==
 
 typescript@next:
-  version "4.1.0-dev.20201025"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.0-dev.20201025.tgz#817d8ba47cdf72e3096ec4f126cd43e8b32fdd2f"
-  integrity sha512-JIYTkDadjkqGl1ZgD9GhoBQdJ8LIDLvUtwqhOC7F8NHwlPSenL6mKDtV3IQ5k18UpBZD+Xwk58ncwU47UyMyxw==
+  version "4.1.0-dev.20201026"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.0-dev.20201026.tgz#81ebe09a926688ba69dcb26e987b34993bcea145"
+  integrity sha512-eeu0PiTyVU+obXKWYUAOVkPjKFzQOdLYGbGvd5TbcQ/CH7c5N7Q3VBuVdO8/rUhau8vw7Mc3EWzCnw7WUG0Img==
 
 unherit@^1.0.4:
   version "1.1.3"
