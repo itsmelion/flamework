@@ -72,7 +72,7 @@
     "stylelint-scss": "3.18.0",
     "ts-loader": "8.0.7",
     "ts-node": "9.0.0",
-    "typescript": "next",
+    "typescript": "4.1.0-beta",
     "typescript-plugin-styled-components": "1.4.4",
     "webpack": "5.3.1"
   },
@@ -123,5 +123,22 @@
     "url": "https://lion.alia.ml/"
   },
   "repository": "github:itsmelion/flamework",
-  "bugs": "https://github.com/itsmelion/flamework/issues"
+  "bugs": "https://github.com/itsmelion/flamework/issues",
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    }
+  }
 }
