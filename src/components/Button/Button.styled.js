@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { shadow } from '../../vars';
 
-export default styled.button`
+export const Button = styled.button`
   width: auto;
   user-select: none;
   line-height: 1.2;
@@ -22,6 +22,11 @@ export default styled.button`
     border-color .15s ease,
     box-shadow .15s ease-in-out;
 
+  &:focus {
+    box-shadow: 0 0 0 1.5pt rgb(0 125 250 / 60%);
+    outline: none;
+  }
+
   ${({ theme }) => {
     if (theme.primary) return css`background-color: var(--theme, ${theme.primary});`;
     return css`background-color: var(--theme);`;
@@ -29,3 +34,5 @@ export default styled.button`
 
   &:hover { ${shadow} }
 `;
+
+export default Button;
