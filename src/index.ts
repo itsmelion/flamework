@@ -1,5 +1,5 @@
-import reset from './reset';
 import base from './base';
+import reset from './reset';
 import typography from './typography';
 import utils, { padding, margin, fill } from './utils';
 

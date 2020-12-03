@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.div`
+const container = styled.div`
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -8,3 +8,5 @@ export default styled.div`
   margin-left: auto;
   max-width: ${({ theme }) => theme.containerWidth || '84rem'};
 `;
+
+export default container;
