@@ -32,10 +32,10 @@
     "styled-components": ">=4"
   },
   "devDependencies": {
-    "@babel/cli": "7.12.8",
-    "@babel/core": "7.12.9",
-    "@babel/node": "7.12.6",
-    "@babel/preset-env": "7.12.7",
+    "@babel/cli": "7.12.10",
+    "@babel/core": "7.12.10",
+    "@babel/node": "7.12.10",
+    "@babel/preset-env": "7.12.10",
     "@babel/preset-typescript": "7.12.7",
     "@typescript-eslint/eslint-plugin": "4.9.1",
     "@typescript-eslint/parser": "4.9.1",
