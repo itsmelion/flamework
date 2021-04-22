@@ -108,6 +108,15 @@
     semver "^6.3.0"
     source-map "^0.5.0"
 
+"@babel/eslint-parser@7.13.14":
+  version "7.13.14"
+  resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.13.14.tgz#f80fd23bdd839537221914cb5d17720a5ea6ba3a"
+  integrity sha512-I0HweR36D73Ibn/FfrRDMKlMqJHFwidIUgYdMpH+aXYuQC+waq59YaJ6t9e9N36axJ82v1jR041wwqDrDXEwRA==
+  dependencies:
+    eslint-scope "^5.1.0"
+    eslint-visitor-keys "^1.3.0"
+    semver "^6.3.0"
+
 "@babel/generator@^7.12.1", "@babel/generator@^7.13.9":
   version "7.13.9"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.13.9.tgz#3a7aa96f9efb8e2be42d38d80e2ceb4c64d8de39"
@@ -5022,12 +5031,13 @@ eslint-config-airbnb@18.2.1:
     object.assign "^4.1.2"
     object.entries "^1.1.2"
 
-eslint-config-lion@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.0.4.tgz#8031f19b46bd8e60bf6e82f137a17fca955e21c4"
-  integrity sha512-wdI8Sn7lhMsh9SW/oCZ4ellE88WMlth07Cu2SQWgmSZDYK0sCs8qpAFRoRmMKgTm3uyOET8cr+BuhKo28vzuvA==
+eslint-config-lion@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.0.5.tgz#28403594b896bd84038cfc5480b50b37a054be71"
+  integrity sha512-0xvfnudRHlVVUWZs5lnwB8qkrm7VT8v2nlxCxu9jdryTRYD6i8ATRhYwjJq6vGZvfIDrJbDU/BYJ/6DggRqzog==
   dependencies:
-    babel-eslint "10.1.0"
+    "@babel/core" "7.13.16"
+    "@babel/eslint-parser" "7.13.14"
     eslint ">=6"
     eslint-config-airbnb-base "*"
     eslint-config-promise "*"
@@ -5195,7 +5205,7 @@ eslint-scope@^4.0.3:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-scope@^5.0.0, eslint-scope@^5.1.1:
+eslint-scope@^5.0.0, eslint-scope@^5.1.0, eslint-scope@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.1.1.tgz#e786e59a66cb92b3f6c1fb0d508aab174848f48c"
   integrity sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==
