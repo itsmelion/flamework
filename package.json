@@ -76,7 +76,7 @@
     "webpack": "5.37.1"
   },
   "optionalDependencies": {
-    "@types/node": "15.3.1",
+    "@types/node": "15.6.1",
     "@types/react": "17.0.6",
     "@types/react-dom": "17.0.5",
     "@types/styled-components": "5.1.9"
