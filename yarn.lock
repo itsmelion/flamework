@@ -5150,17 +5150,17 @@ eslint-config-airbnb@19.0.0:
     object.assign "^4.1.2"
     object.entries "^1.1.5"
 
-eslint-config-lion@2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.1.4.tgz#84294835f0ac9dac1f7f44d7ad3367af30f84ab9"
-  integrity sha512-D6d2vcBrNV6O7rcNAEF6yRTXg0fLQkmzOI63YpP+EtSPxHOylVWkzztcv9hrzDAyidbA0/qHUQ4m48FlmN67vQ==
+eslint-config-lion@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.2.0.tgz#f29324bac4a569049000beeb08ffc421ea0e2aef"
+  integrity sha512-JGPvngM7tupw4xyn681K774swjmOBLOqghb6o05Atbbioilj2YMkCN35PHfUUVF0c0mJut70/49a53KWbB4+cA==
   dependencies:
-    eslint "^6 || ^7 || ^8"
+    eslint "^7 || ^8"
     eslint-config-airbnb-base "*"
     eslint-config-promise "*"
     eslint-config-standard "*"
     eslint-import-resolver-alias "1.1.2"
-    eslint-plugin-import "2.25.2"
+    eslint-plugin-import "2.25.3"
     eslint-plugin-node "11.1.0"
     eslint-plugin-promise "*"
 
@@ -5227,25 +5227,6 @@ eslint-plugin-flowtype@^5.2.0:
     lodash "^4.17.15"
     string-natural-compare "^3.0.1"
 
-eslint-plugin-import@2.25.2, eslint-plugin-import@^2.14.0, eslint-plugin-import@^2.22.1:
-  version "2.25.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.25.2.tgz#b3b9160efddb702fc1636659e71ba1d10adbe9e9"
-  integrity sha512-qCwQr9TYfoBHOFcVGKY9C9unq05uOxxdklmBXLVvcwo68y5Hta6/GzCZEMx2zQiu0woKNEER0LE7ZgaOfBU14g==
-  dependencies:
-    array-includes "^3.1.4"
-    array.prototype.flat "^1.2.5"
-    debug "^2.6.9"
-    doctrine "^2.1.0"
-    eslint-import-resolver-node "^0.3.6"
-    eslint-module-utils "^2.7.0"
-    has "^1.0.3"
-    is-core-module "^2.7.0"
-    is-glob "^4.0.3"
-    minimatch "^3.0.4"
-    object.values "^1.1.5"
-    resolve "^1.20.0"
-    tsconfig-paths "^3.11.0"
-
 eslint-plugin-import@2.25.3:
   version "2.25.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.25.3.tgz#a554b5f66e08fb4f6dc99221866e57cfff824766"
@@ -5259,6 +5240,25 @@ eslint-plugin-import@2.25.3:
     eslint-module-utils "^2.7.1"
     has "^1.0.3"
     is-core-module "^2.8.0"
+    is-glob "^4.0.3"
+    minimatch "^3.0.4"
+    object.values "^1.1.5"
+    resolve "^1.20.0"
+    tsconfig-paths "^3.11.0"
+
+eslint-plugin-import@^2.14.0, eslint-plugin-import@^2.22.1:
+  version "2.25.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.25.2.tgz#b3b9160efddb702fc1636659e71ba1d10adbe9e9"
+  integrity sha512-qCwQr9TYfoBHOFcVGKY9C9unq05uOxxdklmBXLVvcwo68y5Hta6/GzCZEMx2zQiu0woKNEER0LE7ZgaOfBU14g==
+  dependencies:
+    array-includes "^3.1.4"
+    array.prototype.flat "^1.2.5"
+    debug "^2.6.9"
+    doctrine "^2.1.0"
+    eslint-import-resolver-node "^0.3.6"
+    eslint-module-utils "^2.7.0"
+    has "^1.0.3"
+    is-core-module "^2.7.0"
     is-glob "^4.0.3"
     minimatch "^3.0.4"
     object.values "^1.1.5"
@@ -5453,7 +5453,7 @@ eslint-webpack-plugin@^2.5.2:
     normalize-path "^3.0.0"
     schema-utils "^3.0.0"
 
-eslint@8.2.0, "eslint@^6 || ^7 || ^8":
+eslint@8.2.0, "eslint@^7 || ^8":
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.2.0.tgz#44d3fb506d0f866a506d97a0fc0e90ee6d06a815"
   integrity sha512-erw7XmM+CLxTOickrimJ1SiF55jiNlVSp2qqm0NuBWPtHYQCegD5ZMaW0c3i5ytPqL+SSLaCxdvQXFPLJn+ABw==
