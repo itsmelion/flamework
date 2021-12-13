@@ -5142,12 +5142,12 @@ eslint-config-airbnb@19.0.2:
     object.assign "^4.1.2"
     object.entries "^1.1.5"
 
-eslint-config-lion@2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.2.2.tgz#e894030505e222463ea5b1d6a1e20718983a6769"
-  integrity sha512-1gzBRFas0P9XQTqMoThithFFaCRKpV7uLprifxTBNL7UWr6oo4l81nRioNkN/p23kI38TEtpeqng/fSD6UJVSA==
+eslint-config-lion@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.2.3.tgz#2374a3985ec6ae06a2fc681aba851331a937ca25"
+  integrity sha512-HKI8JUcnDP6CaZvdvdI5fyQpEnDl1AQIVPuacHFCWbGvrTA6qVKjYKvn4ZbbAMkyzb9poWvtqcQ/m/CndE2U0g==
   dependencies:
-    eslint "^7.32.0 || ^8"
+    eslint "^8 || ^7.32.0"
     eslint-config-airbnb-base "*"
     eslint-config-promise "*"
     eslint-config-standard "*"
@@ -5384,7 +5384,7 @@ eslint-webpack-plugin@^2.5.2:
     normalize-path "^3.0.0"
     schema-utils "^3.1.1"
 
-eslint@8.4.1, "eslint@^7.32.0 || ^8":
+eslint@8.4.1, "eslint@^8 || ^7.32.0":
   version "8.4.1"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.4.1.tgz#d6531bbf3e598dffd7c0c7d35ec52a0b30fdfa2d"
   integrity sha512-TxU/p7LB1KxQ6+7aztTnO7K0i+h0tDi81YRY9VzB6Id71kNz+fFYnf5HD5UOQmxkzcoa0TlVZf9dpMtUv0GpWg==
