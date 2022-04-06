@@ -59,7 +59,7 @@
     "react": "18.0.0",
     "react-docgen-typescript": "2.2.2",
     "react-dom": "18.0.0",
-    "react-is": "17.0.2",
+    "react-is": "18.0.0",
     "react-scripts": "5.0.0",
     "react-styleguidist": "11.2.0",
     "styled-components": "5.3.5",
