@@ -25,7 +25,7 @@
     "lint:css": "stylelint './src/**/*.js'"
   },
   "resolutions": {
-    "core-js": "3.21.1",
+    "core-js": "3.22.0",
     "chokidar": ">=3"
   },
   "peerDependencies": {
