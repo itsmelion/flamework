@@ -4768,10 +4768,10 @@ eslint-config-airbnb@19.0.4:
     object.assign "^4.1.2"
     object.entries "^1.1.5"
 
-eslint-config-lion@2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.2.5.tgz#fe05ad5e8798865fca0a72487d8d582b34f59009"
-  integrity sha512-jIzL+4pc1xPxqRB/p2gmSeLvhvCN1S5kuOloNz9y8DqCb9m77fMWITENyn7NiarkR0SMOaeUsJPJAPfg1o45Wg==
+eslint-config-lion@2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/eslint-config-lion/-/eslint-config-lion-2.2.6.tgz#1d7bf23184992ac596ba7182d2fc6441a7216fcb"
+  integrity sha512-TE9TseqWE93kg3g1prbvty4lICHrjII2h+j/CHInRcrgdzW1SgEhnLnC5I8JH5IAc3wmw7CPM7gz4t+zjd5p4Q==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5"
     "@typescript-eslint/parser" "^5"
@@ -4779,7 +4779,7 @@ eslint-config-lion@2.2.5:
     eslint-config-airbnb-base "*"
     eslint-config-promise "*"
     eslint-import-resolver-alias "1.1.2"
-    eslint-plugin-import "2.25.4"
+    eslint-plugin-import "2.26.0"
     eslint-plugin-node "11.1.0"
     eslint-plugin-promise "*"
 
@@ -4834,7 +4834,7 @@ eslint-import-resolver-node@^0.3.6:
     debug "^3.2.7"
     resolve "^1.20.0"
 
-eslint-module-utils@^2.7.2, eslint-module-utils@^2.7.3:
+eslint-module-utils@^2.7.3:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.7.3.tgz#ad7e3a10552fdd0642e1e55292781bd6e34876ee"
   integrity sha512-088JEC7O3lDZM9xGe0RerkOMd0EjFl+Yvd1jPWIkMT5u3H9+HC34mWWPnqPrN13gieT9pBOO+Qt07Nb/6TresQ==
@@ -4857,25 +4857,6 @@ eslint-plugin-flowtype@^8.0.3:
   dependencies:
     lodash "^4.17.21"
     string-natural-compare "^3.0.1"
-
-eslint-plugin-import@2.25.4:
-  version "2.25.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.25.4.tgz#322f3f916a4e9e991ac7af32032c25ce313209f1"
-  integrity sha512-/KJBASVFxpu0xg1kIBn9AUa8hQVnszpwgE7Ld0lKAlx7Ie87yzEzCgSkekt+le/YVhiaosO4Y14GDAOc41nfxA==
-  dependencies:
-    array-includes "^3.1.4"
-    array.prototype.flat "^1.2.5"
-    debug "^2.6.9"
-    doctrine "^2.1.0"
-    eslint-import-resolver-node "^0.3.6"
-    eslint-module-utils "^2.7.2"
-    has "^1.0.3"
-    is-core-module "^2.8.0"
-    is-glob "^4.0.3"
-    minimatch "^3.0.4"
-    object.values "^1.1.5"
-    resolve "^1.20.0"
-    tsconfig-paths "^3.12.0"
 
 eslint-plugin-import@2.26.0, eslint-plugin-import@^2.14.0, eslint-plugin-import@^2.25.3:
   version "2.26.0"
@@ -6467,7 +6448,7 @@ is-callable@^1.1.4, is-callable@^1.2.4:
   resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.2.4.tgz#47301d58dd0259407865547853df6d61fe471945"
   integrity sha512-nsuwtxZfMX67Oryl9LCQ+upnC0Z0BgpwntpS89m1H/TLF0zNfzfLMV/9Wa/6MZsj0acpEjAO0KF1xT6ZdLl95w==
 
-is-core-module@^2.2.0, is-core-module@^2.5.0, is-core-module@^2.8.0, is-core-module@^2.8.1:
+is-core-module@^2.2.0, is-core-module@^2.5.0, is-core-module@^2.8.1:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.9.0.tgz#e1c34429cd51c6dd9e09e0799e396e27b19a9c69"
   integrity sha512-+5FPy5PnwmO3lvfMb0AsoPaBG+5KHUI0wYFXOtYPnVVVspTFUuMZNfNaNVRt3FZadstu2c8x23vykRW/NBoU6A==
@@ -11416,7 +11397,7 @@ ts-node@10.8.1:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
-tsconfig-paths@^3.12.0, tsconfig-paths@^3.14.1:
+tsconfig-paths@^3.14.1:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.14.1.tgz#ba0734599e8ea36c862798e920bcf163277b137a"
   integrity sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==
