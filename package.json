@@ -46,7 +46,7 @@
     "eslint-config-lion": "2.2.6",
     "eslint-config-promise": "2.0.2",
     "eslint-config-react": "1.1.7",
-    "eslint-config-standard": "16.0.3",
+    "eslint-config-standard": "17.0.0",
     "eslint-import-resolver-alias": "1.1.2",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsx-a11y": "6.5.1",
