@@ -12,7 +12,7 @@ updates:
     assignees:
       - itsmelion
     schedule:
-      interval: "weekly"
+      interval: "monthly"
       day: "saturday"
     ignore:
       - dependency-name: "typescript"
